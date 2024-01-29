@@ -1,0 +1,283 @@
+body {
+    font-family: 'Noto Serif', serif;
+    padding-top: 0px;
+    background: linear-gradient(to bottom, #2D952D,#2d952de1, #2d952dc7,#2b9c2bd7, #072201d7); 
+}
+
+.containerPrincipal, .containerInicial, .containerFinal, .container{
+    width: 100%; 
+    height: auto;
+    padding: 0px; 
+}
+
+.img-fluid.logo {
+    margin-left: 40%;
+    margin-top: -8%;
+    max-width: 20%;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+    font-size: 2.9vw !important; 
+    line-height: 1.2; 
+    letter-spacing: 1px; 
+    text-align: left; 
+    text-transform: uppercase;   
+}
+
+.TextHeader{
+    font-family: 'Anton', sans-serif;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+    font-size: 2.9vw; 
+    line-height: 1.2; 
+    letter-spacing: 1px; 
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+.TextCores {
+    position: relative;
+    left: 40%;
+    bottom: -90px;
+    display: flex;
+    width: 60%;
+    padding: 5px;
+    font-family: 'Anton', sans-serif;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+    font-size: 2.9vw !important; 
+    line-height: 1.2; 
+    letter-spacing: 1px; 
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.Rack {
+    margin-top: -30%;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.Rack:hover {
+    transform: scale(1.1);
+}
+
+.img-fluid.Principal{
+    border-radius: 20px;
+}
+
+.Principal {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20%;
+
+}
+
+.custom-align {
+    margin-top: 20px;
+}
+
+.tittleP, .tittleP2 {
+    font-family: 'Anton', sans-serif;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 8px rgb(4, 49, 1);
+    font-size: 2.9vw; 
+    line-height: 1.2; 
+    letter-spacing: 1px; 
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.pText {
+    font-size: 0.8vw;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.Dimensoes {
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    font-family: 'Anton', sans-serif;
+    color: #ffeb3b;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgb(4, 49, 1);
+    font-size: 3.9vw;  
+    line-height: 1.2; 
+    letter-spacing: 1px; 
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.img-fluid.medidas {
+    position: relative;
+    left: 30%;
+    max-width: 150%;
+    height:auto;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.custom-alignDois {
+    margin-top: 20px;
+    position: relative;
+    left: 30%;
+}
+
+.pText2 {
+    font-size: 0.8vw;
+    position: relative;
+    right: 12%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+ 
+.Pdf {
+    position: relative;
+    left: 65%;
+    
+    background-color: #2D952D;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px; 
+    text-align: center; 
+    font-size: 1vw; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.Pdf:hover {
+    background-color: #1F7D1F;
+    text-decoration: none; 
+    color:white
+}
+
+
+.highlight-text {
+    max-width: 100%;
+    font-weight: bold;
+    color: #ffeb3b;
+    font-family: 'Anton', sans-serif;
+    text-shadow: 2px 2px 8px rgb(4, 49, 1);
+    font-size: 1.5vw; 
+    line-height: 1.2; 
+    letter-spacing: 1.5px; 
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 768px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    .img-fluid.logo {
+        margin-left: 0%;
+    }
+    
+    h1 {
+        position: relative;
+        left: 5%;
+        top: -3vw;
+    }
+    
+    .TextHeader{
+        position: relative;
+        left: 5%;
+        top: -3vw;
+    }
+    
+    .TextCores {
+        bottom: -15vw;
+        width: 40%;
+    }
+    
+    .img-fluid.Principal{
+        max-width: 100%;
+    }
+    
+    .Principal {
+        position: relative;
+        margin-top: -10vw;
+    }
+    
+    .custom-align {
+        position: relative;
+        margin-top: 5vw;
+    }
+    
+    .pText, .pText2 {
+        font-size: 1.8vw;
+    }
+    
+    .Dimensoes {
+        margin-top: 0%;
+    }
+    
+    .img-fluid.medidas {
+        position: relative;
+        left: 0vw;
+        max-width: 100%;
+    }
+    
+    .custom-alignDois {
+        margin-top: 20px;
+    }
+    
+    .pText2 {
+        position: relative;
+        right: 30%;
+        max-width: 96%;   
+
+    }
+    
+    .Pdf {
+        font-size: 2vw;
+      
+    }
+    
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

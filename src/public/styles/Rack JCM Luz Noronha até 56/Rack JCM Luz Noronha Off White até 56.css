@@ -1,27 +1,29 @@
 body {
     font-family: 'Noto Serif', serif;
-    padding-top: 0px;
+
     background: linear-gradient(to bottom, #2D952D,#2d952de1, #2d952dc7,#2b9c2bd7, #072201d7); 
 }
 
 .containerPrincipal, .containerInicial, .containerFinal, .container{
     width: 100%; 
     height: auto;
-    padding: 0px; 
+    background-color: red;
 }
 
 .img-fluid.logo {
     margin-left: 40%;
     margin-top: -8%;
-    max-width: 20%;
+    max-width: 30%;
     height: auto;
 }
 
-h1 {
+.Titulo {
+    margin-top: -5%;
+    margin-left: -8%;
     font-family: 'Anton', sans-serif;
     color: #ffeb3b;
     text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
-    font-size: 2.9vw !important; 
+    font-size: 2.9vw ; 
     line-height: 1.2; 
     letter-spacing: 1px; 
     text-align: left; 
@@ -29,6 +31,8 @@ h1 {
 }
 
 .TextHeader{
+    margin-top: -2%;
+    margin-left: -8%;
     font-family: 'Anton', sans-serif;
     color: #ffeb3b;
     text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
@@ -39,27 +43,31 @@ h1 {
     text-transform: uppercase;
 }
 
-
 .TextCores {
     position: relative;
     left: 40%;
-    bottom: -90px;
+    top: 5vh;
     display: flex;
-    width: 60%;
+    width: 100%;
     padding: 5px;
     font-family: 'Anton', sans-serif;
     color: #ffeb3b;
     text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
-    font-size: 2.9vw !important; 
+    font-size: 2.9vw; 
     line-height: 1.2; 
     letter-spacing: 1px; 
     text-align: left;
     text-transform: uppercase;
 }
 
+.img-fluid.Rack{
+    max-width: 150%;
+    height: auto;
+}
+
 .Rack {
-    margin-top: -30%;
-    max-width: 100%;
+    margin-top: -17vw;
+    margin-left: -10%;
     height: auto;
     transition: transform 0.3s;
 }
@@ -95,7 +103,7 @@ h1 {
 }
 
 .pText {
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     margin-bottom: 15px;
     background-color: white;
     border-radius: 20px;
@@ -133,7 +141,7 @@ h1 {
 }
 
 .pText2 {
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     position: relative;
     right: 12%;
     background-color: white;
@@ -145,7 +153,6 @@ h1 {
 .Pdf {
     position: relative;
     left: 65%;
-    
     background-color: #2D952D;
     color: white;
     border-radius: 10px;
@@ -174,36 +181,46 @@ h1 {
     font-size: 1.5vw; 
     line-height: 1.2; 
     letter-spacing: 1.5px; 
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
 }
-
 
 @media screen and (max-width: 768px) {
     html,body{
         overflow-x: hidden;
     }
+  
     .img-fluid.logo {
-        margin-left: 0%;
+        margin-left: 4%;
     }
-    
-    h1 {
-        position: relative;
-        left: 5%;
-        top: -3vw;
+
+    .Titulo {
+    margin-left: 7%;
+    font-size: 5vw;
     }
-    
+
     .TextHeader{
-        position: relative;
-        left: 5%;
-        top: -3vw;
+        margin-left:7%;
+        font-size: 5vw;
     }
-    
+   
     .TextCores {
-        bottom: -15vw;
-        width: 40%;
+        top: 10vw;
+        width: 60%;
+        font-size: 4vw;
     }
-    
+
+    .img-fluid.Rack{
+        margin-top: -20vw;
+        margin-bottom: 3%;
+        margin-left: 2%;
+        max-width: 100%;
+    }
+
+    .Rack:hover {
+        transform: none;
+    }
+
     .img-fluid.Principal{
         max-width: 100%;
     }
@@ -217,9 +234,13 @@ h1 {
         position: relative;
         margin-top: 5vw;
     }
+
+    .tittleP,.tittleP2{
+        font-size: 5vw;
+    }
     
     .pText, .pText2 {
-        font-size: 1.8vw;
+        font-size: 2.2vw;
     }
     
     .Dimensoes {
@@ -248,8 +269,102 @@ h1 {
       
     }
     
+    .highlight-text {
+        font-weight: lighter;
+        font-size: 2.5vw; 
+
+    }
+
 }
   
+@media screen and (min-width: 769px) and (max-width: 1476px){
+      
+    .img-fluid.logo {
+        margin-left: 4%;
+    }
+
+    .Titulo {
+        margin-left: -30%;
+        font-size: 4vw;
+    }
+
+    .TextHeader{
+        margin-left: -30%;
+        font-size: 4vw;
+    }
+    
+    .TextCores {
+        top: 2vw;
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    .img-fluid.Rack{
+        margin-top: -25vw;
+        margin-bottom: -20%;
+        max-width: 140%;
+    }
+
+    .img-fluid.Principal{
+        max-width: 100%;
+    }
+    
+    .Principal {
+        position: relative;
+        margin-top: 28vw;
+    }
+    
+    .custom-align {
+        position: relative;
+        margin-top: 5vw;
+    }
+
+    .tittleP,.tittleP2{
+        font-size: 3.5vw;
+    }
+    
+    .pText, .pText2 {
+        font-size: 1.6vw;
+    }
+    
+    .Dimensoes {
+        margin-top: 4%;
+    }
+    
+    .img-fluid.medidas {
+        position: relative;
+        left: 15vw;
+        max-width: 130%;
+    }
+    
+    .custom-alignDois {
+        margin-top: 20px;
+    }
+    
+    .tittleP2{
+       margin-left: 5%;
+    }
+
+    .pText2 {
+        margin-left: 5%;  
+
+    }
+
+    .Pdf {
+        font-size: 1.5vw;
+      
+    }
+    
+    .highlight-text {
+        font-weight: lighter;
+        font-size: 2.5vw; 
+
+    }
+
+}
+    
+
+
 
 
 

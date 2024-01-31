@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronômetro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #timer-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 20px; 
+    }
+
+    #timer {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    #logo {
+      margin-top: -10%;
+      max-width: 6vw; /* Ajuste o valor conforme necessário */
+    }
+  </style>
+</head>
+<body>
+  
+    <div id="timer-container">
+        <img id="logo" src="/imgs/cronometro/sand-8826.gif" alt="Seu Logo">
+        <div id="timer">00:00:00</div>
+      </div>
+  
+    <script>
+      let timerDisplay = document.getElementById('timer');
+      let totalSeconds = localStorage.getItem('totalSeconds') || 0;
+      startTimer();
+  
+      function startTimer() {
+        let timer = setInterval(function() {
+          if (totalSeconds <= 0) {
+            clearInterval(timer);
+            alert('Tempo esgotado!');
+          } else {
+            let hours = Math.floor(totalSeconds / 3600);
+            let minutes = Math.floor((totalSeconds % 3600) / 60);
+            let seconds = totalSeconds % 60;
+  
+            timerDisplay.textContent = `${formatTime(hours)}:${formatTime(minutes)}:${formatTime(seconds)}`;
+            totalSeconds--;
+          }
+        }, 1000);
+      }
+  
+      function formatTime(time) {
+        return time < 10 ? `0${time}` : time;
+      }
+  
+      startTimer();
+    </script>
+  
+  </body>
+</html>

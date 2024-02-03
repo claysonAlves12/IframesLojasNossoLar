@@ -2,22 +2,30 @@ body {
     font-family: 'Noto Serif', serif;
 }
 
-.containerInicial{
-    max-width: 100%; 
+.container, .containerInicial,.containerText,.containerTecnico,.containerFinal{
+    width: 60%;
     height: auto;
     background-color: #3caf3cb8;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* .containerInicial{
+    background-image: url('/imgs/Rack JCM Luz Noronha até 56/design-de-interiores-vazio-e-minimalista-em-tons-de-preto-e-branco.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+} */
+
 .img-fluid.logo {
-    margin-left: 50%;
-    margin-top: -9%;
-    max-width: 30%;
+    margin-top: -10%;
+    max-width: 40%;
     height: auto;
 }
 
 .Titulo {
     margin-top: -6%;
-    margin-left: 60%;
+    margin-left: 4%;
     font-family: 'Anton', sans-serif;
     color: #235b01;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
@@ -29,9 +37,9 @@ body {
 }
 
 .TextHeader{
-    width: 100%;
+    width: 180%;
     margin-top: -2%;
-    margin-left: 60%;
+    margin-left: 4%;
     font-family: 'Anton', sans-serif;
     color: white;
     text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
@@ -43,43 +51,32 @@ body {
 }
 
 .TextCores {
-    margin-left: 87%;
-    margin-top: 7%;
-    margin-bottom: -5%;
-    width: 80%;
-    padding: 5px;
-    font-family: 'Anton', sans-serif;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
-    font-size: 2.9vw; 
-    line-height: 1.2; 
-    letter-spacing: 1px; 
-    text-align: left;
-    text-transform: uppercase;
-}
-
-
-.cor-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; /* Adiciona um espaço entre os pares de bolas e texto */
-}
-
-.NoronhaOffWhite{
     position: relative;
-    left: 43%;
-    display: flex;
-    margin-top: 1.5%;
-    width: 80%;
-    padding: 5px;
+    left: 25vw;
+    margin-top: 7%;
+    width: 90%;
     font-family: 'Anton', sans-serif;
     color: white;
     text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
     font-size: 2.9vw; 
-    line-height: 1.2; 
-    letter-spacing: 1px; 
+   
     text-align: left;
     text-transform: uppercase;
+}
+
+.NoronhaOffWhite {
+
+    max-width: 85%;
+    position: relative;
+    left: 25vw;
+    margin-top: -7%;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+    font-size: 2.9vw; 
+    letter-spacing: 1px; 
+    text-transform: uppercase;
+    text-align: left;
 }
 
 .Noronha-Off-White {
@@ -87,29 +84,28 @@ body {
 }
 
 .bola.Noronha-Off-White {
-    width: 3%;
-    height: 50px;
+    position: relative;
+    width: 7%;
+    height: 2vw;
     border-radius: 50%;
-    margin-right: 30%; 
-    margin-top: 1%;
+    margin-top: -14%;
+    margin-bottom: 2vw;
+    margin-left: 49vw;
     cursor: pointer;
 }
 
-.NoronhaGrafite{
+.NoronhaGrafite {
+    max-width: 50%;
     position: relative;
-    left: 43%;
-    display: flex;
-    margin-top: -2%;
-    width: 80%;
-    padding: 5px;
+    margin-top: -2vw;
+    left: 25vw;
     font-family: 'Anton', sans-serif;
     color: white;
     text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
     font-size: 2.9vw; 
-    line-height: 1.2; 
     letter-spacing: 1px; 
-    text-align: left;
     text-transform: uppercase;
+    text-align: left;
 }
 
 .Noronha-Grafite {
@@ -117,13 +113,17 @@ body {
 }
 
 .bola.Noronha-Grafite {
-    width: 3%;
-    height: 50px;
+    position: relative;
+    width: 7%;
+    height: 2vw;
     border-radius: 50%;
-    margin-right: 33%; 
-    margin-top: -3%;
+    margin-top: -4vw;
+    margin-bottom: 2vw;
+    margin-left: 46vw;
     cursor: pointer;
+   
 }
+
 
 .img-fluid.Rack{
     max-width: 150%;
@@ -132,9 +132,8 @@ body {
 }
 
 .Rack {
-    margin-top: -21vw;
-    margin-left: 50%;
-    height: auto;
+    margin-top: -16vw;
+    margin-left: 30%;
     transition: transform 0.3s;
 }
 
@@ -163,9 +162,6 @@ body {
     background-color: #3caf3cb8;
 }
 
-.TitleText{
-    margin-left: 25%;
-}
 
 .tittleP {
     font-family: 'Anton', sans-serif;
@@ -174,28 +170,29 @@ body {
     font-size: 2.5vw; 
     line-height: 1.2; 
     letter-spacing: 1px; 
-    margin-left: 26%;
+    margin-left: 38%;
+    text-align: center;
     text-transform: uppercase;
 }
 
 .tittlep {
+    width: 200%;
     font-family: 'Anton', sans-serif;
     color: white;
     text-shadow: 2px 2px 8px rgb(4, 49, 1);
     font-size: 2.5vw; 
     line-height: 1.2; 
     letter-spacing: 1px; 
-    margin-left: 7.5%;
+    margin-left: 14%;
     text-transform: uppercase;
 }
 
 .pText {
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
     font-size: 1vw;
     margin-top: 2%;
     background-color: white;
-    margin-left: 6%;
     border-radius: 20px;
     padding: 3%;
 
@@ -210,7 +207,6 @@ body {
     text-align: center;
     text-transform: uppercase;
     margin-top: 1%;
-    margin-left: 4%;
     position: relative;
     z-index: 1000;
 }
@@ -225,9 +221,8 @@ body {
 
 
 .img-fluid.medidas {
-    
     position: relative;
-    left: 57%;
+    left: 50%;
     max-width: 100%;
     height:auto;
 
@@ -235,9 +230,9 @@ body {
 
 
 .containerTecnico{
-    width: 100%; 
     height: auto;
-    padding: 1%; background-color: #3caf3cb8;
+    padding: 1%; 
+    
 }
 
 .custom-alignDois {
@@ -247,31 +242,31 @@ body {
 
 .tittleP2 {
     font-family: 'Anton', sans-serif;
+    width: 100%;
     color: #235b01;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
     font-size: 2.9vw; 
     line-height: 1.2; 
     letter-spacing: 1px; 
     text-align: left;
-    margin-left: 20%;
     text-transform: uppercase;
 }
 
 .pText2 {
-    max-width: 80%;
+    max-width: 100%;
     font-size: 0.9vw;
     position: relative;
     right: 12%;
     background-color: white;
-    margin-left: 15.5%;
     border-radius: 20px;
+    margin-top: 2%;
     padding: 20px;
 
 }
  
 .Pdf {
     position: relative;
-    left: 65%;
+    left: 60%;
     background-color: #2D952D;
     color: white;
     border-radius: 10px;
@@ -292,13 +287,13 @@ body {
 
 .containerFinal{
     padding: 1%;
-    padding: 1%; background-color: #3caf3cb8;
+
 }
 
 .highlight-text {
-    max-width: 50%;
+    margin-top: -2%;
+    max-width: 100%;
     color: white;
-    margin-left: 28%;
     font-family: 'Anton', sans-serif;
     text-shadow: 2px 2px 8px rgb(3, 36, 1);
     font-size: 1.5vw; 
@@ -311,38 +306,40 @@ body {
 
 
 
-@media screen and (min-width: 200px) and (max-width: 768px){
+@media screen and (min-width: 257px) and (max-width: 600px){
     .img-fluid.logo {
-        max-width: 20%;
+        max-width: 40%;
+        margin-top: -15%;
         margin-left:0%;
-        margin-bottom: 2%;
+        margin-bottom: -1%;
     }
     
     .Titulo {
         margin-left: 8%;
-        font-size: 4.6vw ; 
+        font-size: 6.6vw ; 
     }
     
     .TextHeader{
         max-width: 90%;
         margin-left: 8%;
-        font-size: 4.6vw; 
+        font-size: 6.6vw; 
     }
     
     .TextCores {
-        max-width: 50%;
-        margin-left: 39%;
-        margin-bottom: -10%;
-        margin-top: 11%;
-        font-size: 3.9vw; 
+        max-width: 80%;
+        margin-left: 10%;
+        margin-bottom: 0%;
+        margin-top: 1%;
+        font-size: 6.6vw; 
         line-height: 1; 
     }
     
     .NoronhaOffWhite{
-        max-width: 50%;
-        margin-left:-3.5%;
-        margin-top:9vw;
-        font-size: 3.9vw;
+        max-width:80%;
+        margin-left:-30%;
+        margin-right: 0%;
+        margin-top:0vw;
+        font-size: 6.6vw;
     }
 
     .bola.Noronha-Off-White {
@@ -379,7 +376,7 @@ body {
     }
     
     .Rack {
-        margin-top: -32vw;
+        margin-top: -2vw;
         margin-left: -4%;
     }
 
@@ -472,49 +469,82 @@ body {
         font-size: 3.9vw; 
     }
     
+
     .TextCores {
-        margin-left: 80%;
-        margin-bottom: -20%;
-        margin-top: 20%;
+        margin-left: 45vw;
+        margin-top: 7%;
+        width: 75%;
+        font-family: 'Anton', sans-serif;
+        background-color: red;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
         font-size: 3.9vw; 
-        line-height: 1; 
+        letter-spacing: 1px; 
+        text-align: left;
+        text-transform: uppercase;
     }
     
-    .NoronhaOffWhite{
+    
+    .NoronhaOffWhite {
         max-width: 50%;
-        margin-left:-3.5%;
-        margin-top:9vw;
-        font-size: 3.9vw;
+        position: relative;
+        left: 43vw;
+        margin-top: -4%;
+        font-family: 'Anton', sans-serif;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+        font-size: 2.9vw; 
+        letter-spacing: 1px; 
+        text-transform: uppercase;
+        text-align: left;
     }
-
+    
+    .Noronha-Off-White {
+        background-color: #eee5e5;
+    }
+    
     .bola.Noronha-Off-White {
-        width: 3vw;
-        height: 3vw;
-        margin-left: 26vw;
-        margin-right: 0%;
-        margin-top: 8%;
- 
+        position: relative;
+        width: 4%;
+        height: 2vw;
+        border-radius: 50%;
+        margin-top: -8.5%;
+        margin-bottom: 2vw;
+        margin-left: 67vw;
+        cursor: pointer;
     }
-
-    .NoronhaGrafite{
+    
+    .NoronhaGrafite {
         max-width: 50%;
-        margin-left:-3.5%;
-        margin-top: -3%;
-        font-size: 3.9vw;
+        position: relative;
+        margin-top: -2vw;
+        left: 43vw;
+        font-family: 'Anton', sans-serif;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+        font-size: 2.9vw; 
+        letter-spacing: 1px; 
+        text-transform: uppercase;
+        text-align: left;
     }
-
+    
+    .Noronha-Grafite {
+        background-color: #726e6e;
+    }
+    
     .bola.Noronha-Grafite {
-  
-        width: 3vw;
-        height: 3vw;
-        margin-left: 22%;
-        margin-right: 0%;
+        position: relative;
+        width: 4%;
+        height: 2vw;
+        border-radius: 50%;
         margin-top: -4vw;
-        
+        margin-bottom: 2vw;
+        margin-left: 64vw;
+        cursor: pointer;
     }
     
     .Rack {
-        margin-top: -32vw;
+        margin-top: 50vw;
         margin-left: 30%;
     }
 

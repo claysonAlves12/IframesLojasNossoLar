@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Samsung Sharp Sans';
+    src: url('/styles/Samsung-Galaxy-A03/font/samsungsharpsans-bold.otf') format('truetype'); /* Substitua pelo caminho real do seu arquivo de fonte */
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Adicione esta linha para especificar a fonte */
+}
+
+.container{
+    max-width: 100%; 
+}
+
+.cores{
+    position: relative;
+    top: 10%;
+    right: 25%;
+}
+
+.title {
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    background-color: #3caf3cb8;
+    padding: 1%;
+    font-size: 3vw;
+    line-height: 4.5vw;
+    font-family: 'Samsung Sharp Sans';
+    font-style: normal;
+ 
+}
+
+.title2{
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    background-color:#3caf3cb8;
+    padding: 1%;
+    font-size: 2vw; 
+    text-align: left;
+    margin-left: 4%; 
+    line-height: 3vw;
+    margin-top: 20%; 
+    border-radius: 20px;
+}
+
+.title3{
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    background-color:#3caf3cb8;
+    padding: 1%;
+    text-align: left;
+    line-height: 3vw;
+    border-radius: 20px;
+    position: relative;margin-left: -10%;
+    font-size: 2.5vw;
+    margin-top: 10%;
+}
+
+.parag1{
+    color: rgba(0, 0, 0, 0.658);
+    font-size: 1.3vw;
+    font-family: 'SamsungOne 300';
+}
+
+.parag2{
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.parag3{
+    font-size: 1vw;
+    text-align: left;
+    margin-left: 4%;
+}
+
+.parag4{
+    text-align: left;
+    width: 80%;
+    margin-left: -9%;
+    color: rgba(0, 0, 0, 0.658)
+}
+
+.ilustrativo{
+    text-align: left;
+    width: 80%;
+    margin-left: -9%;
+    color: rgba(0, 0, 0, 0.658)
+}
+
+.capture{
+    margin-top: 3%;
+}
+
+.camera{
+    width: 100%;
+}
+
+.selfie{
+    width: 80%;
+    position: relative;
+    left:10%
+}
+
+.nav-links-container {
+    position: relative;
+    left: 22vw;
+    display: flex;
+}
+
+#image-container img {
+    display: none;
+    position: relative;
+    right: 1.7vw;
+}
+#image-container img.active {
+    display: block;
+}
+
+
+@media screen and (min-width: 257px) and (max-width:762px){
+    
+    .container{
+       background-color: antiquewhite;
+    }
+    
+    .cores{
+        width: 80%;
+        top: 0%;
+        right: 2%; 
+    }
+    
+    .imgsPrincipal{
+        position: relative;
+        left: 10%;
+    }
+
+    .parag1{
+        font-size: 1.5vw;
+        width: 100% ;
+    }
+
+    .parag2{
+        font-size: 1.5vw;
+    }
+
+    .capture{
+        margin-top: 0%;
+    }
+
+    .title2{
+        width: 100%;
+        font-size: 3vw; 
+        text-align: center;
+        margin-left: 0%; 
+        line-height: 3vw;
+        margin-top: 2%; 
+        border-radius: 20px;
+    }
+
+    .parag3{
+        width: 100%;
+        font-size: 1.5vw;
+        text-align: center;
+    }
+    
+    .camera{
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+
+    .nav-links-container {
+        position: relative;
+        left: 18vw;
+        display: flex;
+    }
+
+    .title3{
+        text-align: center;
+        line-height: 3vw;
+        position: relative;
+        margin-left: 0%;
+        font-size: 2.5vw;
+        margin-top: 4%;
+    }
+
+    .parag4{
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        font-size: 1.5vw;
+        color: rgba(0, 0, 0, 0.658)
+    }
+
+    .ilustrativo{
+        position: relative;
+        margin-top: -23%;
+        font-size: 1.5vw;
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .celular{
+        margin-top:18% ;
+    }
+
+
+}

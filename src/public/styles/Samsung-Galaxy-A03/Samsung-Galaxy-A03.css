@@ -9,7 +9,7 @@ header {
     text-align: center;
     font-family: 'Roboto', sans-serif; /* Adicione esta linha para especificar a fonte */
 }
-/*imgs*/
+
 .logo{
     width: 40%;
     margin-top: -15%;
@@ -37,6 +37,11 @@ h2{
     font-style: normal;
 }
 
+p{   
+    color: rgba(0, 0, 0, 0.658);
+    font-family: 'SamsungOne 300'; 
+}
+
 .title { 
     padding: 1%;
     font-size: 3vw;
@@ -44,78 +49,115 @@ h2{
  
 }
 
-.title2{
+.parag{
+    font-size: 1.3vw;
+}
+
+.subParag1{
+    font-size: 0.8vw;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.titleAp { 
     padding: 1%;
+    font-size: 2.5vw;
+    line-height: 4.5vw;
+}
+
+.parag2{
+    font-size: 1.3vw;
+}
+
+.title2{
+    padding: 4%;
     font-size: 2vw; 
     text-align: left;
     margin-left: 4%; 
     line-height: 3vw;
-    margin-top: 20%; 
+    margin-top: 10%; 
     border-radius: 20px;
 }
 
-.title3{
+.parag3{
+    font-size: 1.3vw;
+    text-align: left;
+    margin-left: 4%;
+}
+
+.titleFoco{
+    font-size: 2.5vw; 
+    line-height: 3.5vw;
+    margin-top: 2%;
     padding: 1%;
+    font-size: 3vw;
+}
+
+.title3{
+    padding: 4%;
     text-align: left;
     line-height: 3vw;
     border-radius: 20px;
     position: relative;
     margin-left: -10%;
     font-size: 2.5vw;
-    margin-top: 10%;
-}
-
-.title4{
-    position: relative;
-    padding: 2%;
-    right: 20%;
-    font-size: 2vw;
-    text-align: left;
-    line-height: 2.5vw;
-    border-radius: 20px;
-    margin-top:30%;
-    width:120%;
-}
-
-.title5{
-    padding: 3%;
-    font-size: 2vw; 
-    line-height: 2.5vw;
-    border-radius: 20px;
-    margin-top: 20%;
-    text-align: left;
-}
-
-.parag1{
-    color: rgba(0, 0, 0, 0.658);
-    font-size: 1.3vw;
-    font-family: 'SamsungOne 300';
-}
-
-.parag2{
-    font-size: 1vw;
-    color: rgba(0, 0, 0, 0.658);
-}
-
-.parag3{
-    font-size: 1vw;
-    text-align: left;
-    margin-left: 4%;
+    margin-top: 5%;
 }
 
 .parag4{
     text-align: left;
     width: 80%;
+    font-size: 1.3vw;
     margin-left: -9%;
-    color: rgba(0, 0, 0, 0.658)
 }
 
-.ilustrativo{
-    font-size: 1.5vw;
+.subParag2{
+    font-size: 0.8vw;
     text-align: left;
     width: 100%;
     margin-left: -9%;
-    color: rgba(0, 0, 0, 0.658)
+}
+
+.title5{
+    position: relative;
+    padding: 4%;
+    right: 20%;
+    font-size: 3vw;
+    text-align: left;
+    line-height: 3vw;
+    border-radius: 20px;
+    margin-top:15%;
+    width:120%;
+}
+
+.parag5{
+    text-align: left;
+    width: 125%;
+    font-size: 1.3vw;
+    margin-left: -20%;
+}
+
+.subParag3{
+    font-size: 0.8vw;
+    text-align: left;
+    width: 100%;
+    margin-left: -20%;
+}
+
+.title6{
+    position: relative;
+    padding: 4%;
+    font-size: 2.5vw;
+    text-align: left;
+    line-height: 3vw;
+    border-radius: 20px;
+    margin-top:15%;
+    width:100%;
+}
+
+.parag6{
+    text-align: left;
+    position: relative;
+    font-size: 1.3vw;
 }
 
 .capture{
@@ -134,7 +176,7 @@ h2{
 
 .nav-links-container {
     position: relative;
-    left: 40%;
+    left: 39%;
     display: flex;
 }
 
@@ -148,19 +190,215 @@ h2{
 }
 
 
+
+@media screen and (min-width: 200px) and (max-width:767px){
+    body, html{
+        overflow-x: hidden;
+    }
+    .container{
+        background-color: rgba(255, 0, 0, 0.219);
+    }
+
+    .imgsPrincipal{
+        width: 50%;
+    }
+
+    .cores{
+        width: 50%;
+        position: relative;
+        margin-top: -51%;
+        right: 0%;
+        left: 40%;
+
+    }
+    
+    .title { 
+        padding: 2%;
+        font-size: 3.4vw;
+        line-height: 4.5vw;
+     
+    }
+    
+    .parag{
+        font-size: 2.5vw;
+    }
+    
+    .subParag1{
+        font-size: 0.8vw;
+        color: rgba(0, 0, 0, 0.658);
+    }
+    
+    .titleAp { 
+        padding: 1%;
+        font-size: 2.5vw;
+        line-height: 4.5vw;
+    }
+    
+    .parag2{
+        font-size: 1.3vw;
+    }
+    
+    .title2{
+        padding: 4%;
+        font-size: 2vw; 
+        text-align: left;
+        margin-left: 4%; 
+        line-height: 3vw;
+        margin-top: 10%; 
+        border-radius: 20px;
+    }
+    
+    .parag3{
+        font-size: 1.3vw;
+        text-align: left;
+        margin-left: 4%;
+    }
+    
+    .titleFoco{
+        font-size: 2.5vw; 
+        line-height: 3.5vw;
+        margin-top: 2%;
+        padding: 1%;
+        font-size: 3vw;
+    }
+    
+    .title3{
+        padding: 4%;
+        text-align: left;
+        line-height: 3vw;
+        border-radius: 20px;
+        position: relative;
+        margin-left: -10%;
+        font-size: 2.5vw;
+        margin-top: 5%;
+    }
+    
+    .parag4{
+        text-align: left;
+        width: 80%;
+        font-size: 1.3vw;
+        margin-left: -9%;
+    }
+    
+    .subParag2{
+        font-size: 0.8vw;
+        text-align: left;
+        width: 100%;
+        margin-left: -9%;
+    }
+    
+    .title5{
+        position: relative;
+        padding: 4%;
+        right: 20%;
+        font-size: 3vw;
+        text-align: left;
+        line-height: 3vw;
+        border-radius: 20px;
+        margin-top:15%;
+        width:120%;
+    }
+    
+    .parag5{
+        text-align: left;
+        width: 125%;
+        font-size: 1.3vw;
+        margin-left: -20%;
+    }
+    
+    .subParag3{
+        font-size: 0.8vw;
+        text-align: left;
+        width: 100%;
+        margin-left: -20%;
+    }
+    
+    .title6{
+        position: relative;
+        padding: 4%;
+        font-size: 2.5vw;
+        text-align: left;
+        line-height: 3vw;
+        border-radius: 20px;
+        margin-top:15%;
+        width:100%;
+    }
+    
+    .parag6{
+        text-align: left;
+        position: relative;
+        font-size: 1.3vw;
+    }
+    
+    .capture{
+        margin-top: 3%;
+    }
+    
+    .camera{
+        width: 100%;
+    }
+    
+    .selfie{
+        width: 80%;
+        position: relative;
+        left:10%
+    }
+    
+    .nav-links-container {
+        position: relative;
+        left: 39%;
+        display: flex;
+    }
+    
+    #image-container img {
+        display: none;
+        position: relative;
+        right: 1.7vw;
+    }
+    #image-container img.active {
+        display: block;
+    }
+    
+ 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 768px) and (max-width:991px){
     .logo{
        width: 50%;
        margin-bottom: -12%;
     }
 
+    .cores{
+        top: 20%;
+    }
+
     .imgSamsung{
         width: 80%;
     }
 
-    
     .title {
         font-size: 3.5vw;
+    }
+
+    .titleFoco{
+        line-height: 3.5vw;
+        font-size: 3vw;
     }
 
     .title2{
@@ -180,11 +418,21 @@ h2{
         padding: 6%;
     }
 
+    .title6{
+        padding: 6%;
+        position: relative;
+        margin-top:10%;
+    }
 
     .parag1{
         color: rgba(0, 0, 0, 0.658);
         font-size: 1.7vw;
         font-family: 'SamsungOne 300';
+    }
+
+    .subParag1{
+        font-size: 1.3vw;
+        color: rgba(0, 0, 0, 0.658);
     }
 
     .parag2{
@@ -205,112 +453,41 @@ h2{
         margin-left: -9%;
     }
 
-    
-.nav-links-container {
-    position: relative;
-    left: 35%;
-    display: flex;
-}
-
-
-
-}
-
-
-
-
-
-
-
-
-@media screen and(max-width:764px){
-    
-    .container{
-       background-color: red;
+    .parag5{
+        font-size: 1.4vw;
     }
     
-    .cores{
-        width: 80%;
-        top: 0%;
-        right: 2%; 
-    }
-    
-    .imgsPrincipal{
+    .parag6{
+        text-align: left;
         position: relative;
-        left: 10%;
-    }
-
-    .parag1{
-        font-size: 1.5vw;
-        width: 100% ;
-    }
-
-    .parag2{
+        right: 20%;
+        color: rgba(0, 0, 0, 0.658);
         font-size: 1.5vw;
     }
 
-    .capture{
-        margin-top: 0%;
+    .parag7{
+        font-size: 1.2vw;
+
     }
 
-    .title2{
-        width: 100%;
-        font-size: 3vw; 
-        text-align: center;
-        margin-left: 0%; 
-        line-height: 3vw;
-        margin-top: 2%; 
-        border-radius: 20px;
-        background-color: red;
+    .parag8{
+        font-size:1.5vw;
     }
 
-    .parag3{
-        width: 100%;
-        font-size: 1.5vw;
-        text-align: center;
+    .parag9{
+        font-size:1vw;
     }
-    
-    .camera{
-        width: 80%;
-        position: relative;
-        left: 10%;
+
+    .parag10{
+     font-size:1.5vw;
+   
     }
 
     .nav-links-container {
         position: relative;
-        left: 18vw;
+        left: 35%;
         display: flex;
     }
 
-    .title3{
-        text-align: center;
-        line-height: 3vw;
-        position: relative;
-        margin-left: 0%;
-        font-size: 2.5vw;
-        margin-top: 4%;
-    }
-
-    .parag4{
-        text-align: center;
-        width: 80%;
-        margin-left: 10%;
-        font-size: 1.5vw;
-        color: rgba(0, 0, 0, 0.658)
-    }
-
-    .ilustrativo{
-        position: relative;
-        margin-top: -23%;
-        font-size: 1.5vw;
-        text-align: center;
-        width: 80%;
-        margin-left: 10%;
-    }
-
-    .celular{
-        margin-top:18% ;
-    }
-
-
 }
+

@@ -1,0 +1,658 @@
+.fundo {
+    position: relative; 
+    z-index: 0; 
+}
+
+.fundo::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../imgs/ImagensPrincipais/BannerArenaBravoCompleto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.5; 
+    z-index: -1;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    background-color: #004D40;
+    justify-content: space-between;
+    padding: 0.5%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    position: sticky;  
+    top: 0;           
+}
+
+#logoArenaBravo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+#logoArenaBravo img {
+    width: 8%;
+}
+
+#logoArenaBravo span {
+    padding: 1%;
+    font-size: 1.5vw;
+    font-family: 'Arial Black', sans-serif;
+    color: #EEF093;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+#logoArenaBravo span:hover {
+    transform: scale(1.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.banner {
+    position: relative;
+    margin-bottom: 2%;
+    z-index: 1; 
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%; 
+    padding-bottom: 20%; 
+    z-index: 0;  
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%; 
+    height: auto; 
+    opacity: 0;
+    transition: opacity 1.0s ease-in-out;
+}
+
+.image-container img:first-child {
+    opacity: 1;
+}
+
+.navigation-dots {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.dot {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: #717171;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #EEF08F;
+}
+
+.dot:active, .dot:hover {
+    background-color: #EEF08F;
+}
+
+.container{
+    background-color: #004D40; 
+    color: white;
+    border-radius: 10px; 
+    padding: 2%;
+}
+
+.custom-h5 {
+    font-size: 1.78vw;
+    font-weight: bold;
+    text-align: center;
+    color: #EEF093;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    width:100%;
+    margin-bottom: 4%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9); 
+
+}
+
+.video-wrapper {
+    position: relative;
+    max-width: 100%;
+    margin-left: 0.5vw;
+    margin-bottom: 2%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 35px rgba(238, 255, 0, 0.8);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    background: linear-gradient(135deg, #FFD700, #EEF093);
+}
+
+.video-wrapper:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 50px rgba(238, 255, 0, 1);
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #EEF093, rgba(0, 0, 0, 0.7)); 
+    border-radius: 15px;
+    pointer-events: none;
+    transition: background 0.5s ease-in-out; 
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #FFD700;
+    border-radius: 15px;
+    transition: border 0.5s ease-in-out;
+}
+
+.video-wrapper:hover iframe {
+    border-color: #FFD700;
+}
+
+.video-wrapper iframe {
+    transition: border 0.5s ease-in-out;
+}
+
+.TextReserva-h5 {
+    font-size: 1.78vw;
+    font-weight: bold;
+    text-align: center;
+    color: #EEF093;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    width: 100%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9); 
+    padding: 10px; 
+}
+
+.textReserva {
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1vw;
+    line-height: 1.8;
+    color: #2c3e50; 
+    background-color: #ecf0f1; 
+    padding: 5%; 
+    border-radius: 15px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    text-align: justify; 
+    border-left: 8px solid #EEF093; 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer; 
+    position: relative; 
+}
+
+.textReserva:hover {
+    color: #004D40;
+    background-color: #EEF093;
+    transform: scale(1.02); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.6s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 8px solid #ffffff; 
+}
+
+.textReserva::after {
+    content: "✔"; 
+    font-size: 1vw;
+    color: #06910d; 
+}
+
+#formulario {
+    max-width: 100vw;
+    height: auto;
+    margin-top: 10%;
+    padding: 5%;
+    color: black;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; 
+}
+
+#formulario:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.9); 
+}
+
+.custom-h5-reservar {
+    background-color: #004D40;
+    padding: 2%;
+    color: #EEF093;
+    border-radius: 25px; 
+    text-align: center;
+    font-size: 2vw; 
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+label {
+    font-size: 1vw;
+    display: block;
+    font-weight: bold;
+    color: #004D40;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 3%;
+    box-sizing: border-box;
+    border: 3px solid #004D40;
+    border-radius: 12px; 
+    transition: border-color 0.3s ease;
+}
+
+input[type="submit"] {
+    background-color: #004D40;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1vw; /* Aumenta ainda mais o tamanho da fonte */
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #002E27;
+}
+
+.horariosDisponiveis {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: rgb(0, 77, 64); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(238, 240, 147);
+    max-width: 80%;
+    text-align: center;
+    color: rgb(238, 240, 147);
+}
+
+.center-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.horariosDisponiveis h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.horariosDisponiveis ul {
+    color: white;
+    list-style-type: none;
+    padding: 0;
+}
+
+.horariosDisponiveis ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.btnFecharHorario {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #004D40; 
+    background-color: #EEF093;
+    transition: background-color 0.3s;
+}
+
+.btnFecharHorario:hover {
+    background-color: rgba(255, 0, 0, 1);
+    color: white;
+}
+
+.status-moviment{ 
+    max-width: 100%;
+    height: auto;
+    margin-top: 2%;
+    padding: 2%;
+    transition: transform 0.3s ease;  
+}
+
+.horario-funcionamento {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #e6e6e6, #f9f9f9); 
+    color: black; 
+    padding: 1%;
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+
+.horario-funcionamento p {
+    font-size: 0.9vw;
+    margin: 1% ; 
+  
+}
+
+.horario-funcionamento p strong {
+    color: #226358;
+    text-align: center;
+    font-weight: bolder;  
+}
+
+.status-funcionamento {
+    display: flex;
+    justify-content: center; 
+    font-size: 2vw; 
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase; 
+    font-weight: bold;
+    background-color: #004D40;
+    border-radius: 12px 12px 0px 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9); 
+}
+
+.containerDois{
+    background-color: #004D40; 
+    color: white;
+    padding: 1% 10% 5% 0%; 
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+
+#meuCarrossel {
+    width: 80%;
+    margin: 10px 0px 0px 10px;
+}
+
+.mainCarousel {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    margin-left: 15%;
+    position: relative;
+    border: 1px solid #EEF08F;
+    border-radius: 15px;
+    box-shadow: 0 0 35px rgba(238, 255, 0, 0.8);
+}
+
+.carousel-inner::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    content: "Explore o Local";
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+    color: #eef093;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px #000000;
+    padding: 20px;
+    pointer-events: none; 
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.801); 
+    transform: translate(-50%, -50%) scale(1);
+    transition: background-color 0.3s ease; 
+} 
+
+#meuCarrossel:hover .carousel-inner::before {
+    content: "";
+    background-color: rgba(0, 0, 255, 0); 
+}
+
+#meuCarrossel:hover .mainCarousel {
+    transform: scale(1.05); 
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size: 70%; 
+    position: absolute; 
+    transition: background-size 0.3s; 
+    cursor: pointer; 
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-size: 75%; 
+    transform: scale(1.1);  
+}
+
+.carousel-control-prev {
+   margin-left: 15%;
+   background-image: url('../imgs/ImagensPrincipais/bolaPrevious.png'); 
+  
+}
+
+.carousel-control-next {
+    margin-right: -15%;
+    background-image: url('../imgs/ImagensPrincipais/bolaPrevious.png'); 
+}
+
+.fancybox-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); 
+    border-radius: 10px;
+}
+
+.fancybox-inner {
+    padding: 30px;
+    background-color: rgba(0, 77, 64, 0.7); 
+    border-radius: 15px;
+}
+
+.fancybox-slide {
+    border: 4px solid rgba(238, 240, 143, 0.8);
+    border-radius: 12px; 
+    overflow: hidden;
+}
+
+.fancybox-inner:hover {
+    box-shadow: 0 0 30px rgba(238, 240, 143, 0.8);
+}
+
+.fancybox-inner:hover {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.TituloMapa {
+    padding: 2%;
+    color: #EEF093;
+    border-radius: 25px; 
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+    margin-left: 10%;
+}
+
+.maps {
+    margin: 5%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    width: 100%;
+    margin: 0% 0% 0% 8%;
+    height:82%;
+    box-shadow: 0px 0px 30px rgba(251, 255, 0, 0.7);
+}
+
+.maps iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.maps iframe {
+    transition: border-color 0.3s ease;
+    border: 3px solid #fff;
+}
+
+.maps:hover iframe {
+    border-color: #FFC107; 
+}
+
+.cookie-notification {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    background-color: #f9f9f9; 
+    padding: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; 
+    text-align: center; 
+    z-index: 1000; 
+}
+
+.textCookie {
+    display: inline-block; 
+    padding: 10px;
+    margin: 0; 
+    vertical-align: middle;
+    margin-right: 20px; 
+    text-align: left;
+}
+
+#accept-cookies-btn {
+    background-color: #004D40; 
+    border-color: #004D40; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-weight: bold;
+    color: #EEF093; 
+    transition: background-color 0.3s ease; 
+}
+
+#accept-cookies-btn:hover {
+    background-color: #0da189; 
+    border-color: #0da189; 
+    color: white;
+}
+
+
+footer.bg-dark {
+    background-color: black !important;
+    margin-top: 1%; 
+}
+
+.redesSociais {
+    color: #EEF093;
+    text-align: center;
+    font-size: 1.2vw; 
+    text-transform: uppercase; 
+}
+
+.social-icon img {
+    height: 40px;
+    padding: 2px;
+    margin-bottom: -10px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+    /* Adicione regras específicas para dispositivos móveis aqui */
+    header {
+        padding: 2%;
+    }
+
+    #logoArenaBravo {
+        padding: 5%;
+    }
+
+    /* ... Outras modificações necessárias para dispositivos móveis */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -200,63 +200,55 @@ p{
     }
 
     .imgsPrincipal{
-        width: 50%;
+        position: relative;
+        left: 10%;
     }
 
     .cores{
-        width: 50%;
+        width: 80%;
         position: relative;
-        margin-top: -51%;
-        right: 0%;
-        left: 40%;
-
+        top: 0%;
+        right: 2%;
     }
-    
+        
     .title { 
-        padding: 2%;
-        font-size: 3.4vw;
-        line-height: 4.5vw;
-     
+       font-size: 4vw;
     }
     
     .parag{
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
     
     .subParag1{
-        font-size: 0.8vw;
-        color: rgba(0, 0, 0, 0.658);
+        font-size: 2vw;
     }
     
     .titleAp { 
-        padding: 1%;
-        font-size: 2.5vw;
-        line-height: 4.5vw;
+        font-size: 4vw;
     }
     
     .parag2{
-        font-size: 1.3vw;
+        font-size: 3vw;
     }
     
     .title2{
-        padding: 4%;
-        font-size: 2vw; 
-        text-align: left;
-        margin-left: 4%; 
-        line-height: 3vw;
-        margin-top: 10%; 
-        border-radius: 20px;
+        font-size: 4vw; 
+        text-align: center;
+        margin-left: 0%; 
+        line-height: 4vw;
+        margin-top: 0%; 
+        border-radius: 0px;
     }
     
     .parag3{
-        font-size: 1.3vw;
+        font-size: 3vw;
         text-align: left;
         margin-left: 4%;
     }
     
     .titleFoco{
-        font-size: 2.5vw; 
-        line-height: 3.5vw;
+        font-size: 4vw; 
+        line-height: 4vw;
         margin-top: 2%;
         padding: 1%;
         font-size: 3vw;

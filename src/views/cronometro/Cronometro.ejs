@@ -1,72 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cronômetro</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-
-    #timer-container {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-right: 20px; 
-    }
-
-    #timer {
-      font-size: 3em;
-      margin-bottom: 20px;
-    }
-
-    #logo {
-      margin-top: -10%;
-      max-width: 6vw; /* Ajuste o valor conforme necessário */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/imgs/LojasNossoLar.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/cronometro/Configuração Cronometro.css">
+    <title>Exibir Cronômetro</title>
 </head>
 <body>
+
+  <div id="countdown-display"></div>
+
+  <script>
+    var countdownInterval;
+
+    function startCountdown(totalTimeInSeconds) {
+      clearInterval(countdownInterval);
   
-    <div id="timer-container">
-        <img id="logo" src="/imgs/cronometro/sand-8826.gif" alt="Seu Logo">
-        <div id="timer">00:00:00</div>
-      </div>
+      var displayElement = document.getElementById("countdown-display");
   
-    <script>
-      let timerDisplay = document.getElementById('timer');
-      let totalSeconds = localStorage.getItem('totalSeconds') || 0;
-      startTimer();
+      countdownInterval = setInterval(function() {
+        var hoursRemaining = Math.floor(totalTimeInSeconds / 3600);
+        var minutesRemaining = Math.floor((totalTimeInSeconds % 3600) / 60);
   
-      function startTimer() {
-        let timer = setInterval(function() {
-          if (totalSeconds <= 0) {
-            clearInterval(timer);
-            alert('Tempo esgotado!');
-          } else {
-            let hours = Math.floor(totalSeconds / 3600);
-            let minutes = Math.floor((totalSeconds % 3600) / 60);
-            let seconds = totalSeconds % 60;
-  
-            timerDisplay.textContent = `${formatTime(hours)}:${formatTime(minutes)}:${formatTime(seconds)}`;
-            totalSeconds--;
-          }
-        }, 1000);
-      }
-  
-      function formatTime(time) {
-        return time < 10 ? `0${time}` : time;
-      }
-  
-      startTimer();
-    </script>
-  
-  </body>
+        displayElement.innerHTML = "Tempo Restante: " + hoursRemaining + " horas e " + minutesRemaining + " minutos";
+
+        if (totalTimeInSeconds <= 0) {
+          clearInterval(countdownInterval);
+          displayElement.innerHTML = "Cronômetro zerado!";
+        } else {
+          // Decrementar o tempo restante
+          totalTimeInSeconds--;
+        }
+      }, 1000); 
+    }
+
+    // Extrair os parâmetros da URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var hours = urlParams.get('hours');
+    var minutes = urlParams.get('minutes');
+
+    // Se ambos os valores estiverem presentes, iniciar o cronômetro
+    if (hours !== null && minutes !== null) {
+      var totalTimeInSeconds = (parseInt(hours) * 3600) + (parseInt(minutes) * 60);
+      startCountdown(totalTimeInSeconds);
+    }
+  </script>
+
+</body>
 </html>

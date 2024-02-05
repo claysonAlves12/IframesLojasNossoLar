@@ -5,10 +5,33 @@ const path = require('path');
 const fs = require('fs').promises;
 const ejs = require('ejs');
 const port = 3000;
+const firebase = require('firebase');
 
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'src', 'public')));
 app.set('views', path.join(__dirname, 'src', 'views'));
+
+const firebaseConfig = {
+  apiKey: 'SuaChaveAPI',
+  authDomain: 'SeuDominio.firebaseapp.com',
+  databaseURL: 'https://SeuProjeto.firebaseio.com',
+  projectId: 'SeuProjeto',
+  storageBucket: 'SeuProjeto.appspot.com',
+  messagingSenderId: 'SeuID',
+  appId: 'SeuAppID',
+};
+
+firebase.initializeApp(firebaseConfig);
+
+
+const database = firebase.database();
+
+const ref = database.ref('caminho/para/seus/dados');
+ref.once('value', (snapshot) => {
+  const data = snapshot.val();
+  console.log(data);
+});
+
 
 app.use(bodyParser.json());
 
@@ -90,20 +113,11 @@ app.get('/view/:ejsFilePath(*)', async (req, res) => {
   }
 });
 
-
-app.post('/configurar-cronometro', (req, res) => {
-  const { hours, minutes, seconds } = req.body;
-
-  const totalSeconds = parseInt(hours) * 3600 + parseInt(minutes) * 60 + parseInt(seconds);
-
-  if (isNaN(totalSeconds) || totalSeconds <= 0) {
-    res.status(400).json({ error: 'Por favor, insira valores válidos para horas, minutos e segundos.' });
-    return;
-  }
-
-  console.log("foi");
-  res.status(200).json({ success: true });
+app.get('/cronometro', function(req, res) {
+  res.render('cronometro/Cronometro'); 
 });
+
+
 
 
 app.listen(port, () => {

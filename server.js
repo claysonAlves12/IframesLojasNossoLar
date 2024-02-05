@@ -5,13 +5,13 @@ const path = require('path');
 const fs = require('fs').promises;
 const ejs = require('ejs');
 const port = 3000;
-const firebase = require('firebase');
-
+/* const firebase = require('firebase');
+ */
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'src', 'public')));
 app.set('views', path.join(__dirname, 'src', 'views'));
 
-const firebaseConfig = {
+/* const firebaseConfig = {
   apiKey: 'SuaChaveAPI',
   authDomain: 'SeuDominio.firebaseapp.com',
   databaseURL: 'https://SeuProjeto.firebaseio.com',
@@ -30,7 +30,7 @@ const ref = database.ref('caminho/para/seus/dados');
 ref.once('value', (snapshot) => {
   const data = snapshot.val();
   console.log(data);
-});
+}); */
 
 
 app.use(bodyParser.json());

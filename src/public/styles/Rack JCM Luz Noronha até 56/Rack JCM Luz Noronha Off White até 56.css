@@ -11,11 +11,12 @@ body {
 }
 
  .containerInicial{
-    background-image: url('/imgs/Rack JCM Luz Noronha até 56/design-de-interiores-vazio-e-minimalista-em-tons-de-preto-e-branco.jpg');
+    background-image: url('/imgs/Rack JCM Luz Noronha até 56/fundoRack.jpg');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center center;
 } 
+
 
 .img-fluid.logo {
     margin-top: -10%;

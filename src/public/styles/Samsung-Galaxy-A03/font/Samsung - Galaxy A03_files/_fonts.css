@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'SamsungOne 600C';
+    src: local("../fonts/SamsungOne-600C"), url("../fonts/SamsungOne-600C.woff2") format("woff2"), url("../fonts/SamsungOne-600C.woff") format("woff"), url("../fonts/SamsungOne-600C.svg#SamsungOne-600C") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Samsung InterFace';
+    src: local("../fonts/Samsung InterFace"), local("../fonts/SamsungInterFace-Regular"), url("../fonts/SamsungInterFace-Regular.woff2") format("woff2"), url("../fonts/SamsungInterFace-Regular.woff") format("woff"), url("../fonts/SamsungInterFace-Regular.svg#SamsungInterFace-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOne 700C';
+    src: local("../fonts/SamsungOne-700C"), url("../fonts/SamsungOne-700C.woff2") format("woff2"), url("../fonts/SamsungOne-700C.woff") format("woff"), url("../fonts/SamsungOne-700C.svg#SamsungOne-700C") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOne 200C';
+    src: local("../fonts/SamsungOne-200C"), url("../fonts/SamsungOne-200C.woff2") format("woff2"), url("../fonts/SamsungOne-200C.woff") format("woff"), url("../fonts/SamsungOne-200C.svg#SamsungOne-200C") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOne 800';
+    src: local("../fonts/SamsungOne-800"), url("../fonts/SamsungOne-800.woff2") format("woff2"), url("../fonts/SamsungOne-800.woff") format("woff"), url("../fonts/SamsungOne-800.svg#SamsungOne-800") format("svg");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOne 200';
+    src: local("../fonts/SamsungOne-200"), url("../fonts/SamsungOne-200.woff2") format("woff2"), url("../fonts/SamsungOne-200.woff") format("woff"), url("../fonts/SamsungOne-200.svg#SamsungOne-200") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOne 450C';
+    src: local("../fonts/SamsungOne-450C"), url("../fonts/SamsungOne-450C.woff2") format("woff2"), url("../fonts/SamsungOne-450C.woff") format("woff"), url("../fonts/SamsungOne-450C.svg#SamsungOne-450C") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Samsung InterFace';
+    src: local("../fonts/Samsung InterFace Black"), local("../fonts/SamsungInterFace-Black"), url("../fonts/SamsungInterFace-Black.woff2") format("woff2"), url("../fonts/SamsungInterFace-Black.woff") format("woff"), url("../fonts/SamsungInterFace-Black.svg#SamsungInterFace-Black") format("svg");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Samsung InterFace';
+    src: local("../fonts/Samsung InterFace Bold Italic"), local("../fonts/SamsungInterFace-BoldItalic"), url("../fonts/SamsungInterFace-BoldItalic.woff2") format("woff2"), url("../fonts/SamsungInterFace-BoldItalic.woff") format("woff"), url("../fonts/SamsungInterFace-BoldItalic.svg#SamsungInterFace-BoldItalic") format("svg");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SamsungOne 450';
+    src: local("../fonts/SamsungOne-450"), url("../fonts/SamsungOne-450.woff2") format("woff2"), url("../fonts/SamsungOne-450.woff") format("woff"), url("../fonts/SamsungOne-450.svg#SamsungOne-450") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOne 600';
+    src: local("../fonts/SamsungOne-600"), url("../fonts/SamsungOne-600.woff2") format("woff2"), url("../fonts/SamsungOne-600.woff") format("woff"), url("../fonts/SamsungOne-600.svg#SamsungOne-600") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOne 500C';
+    src: local("../fonts/SamsungOne-500C"), url("../fonts/SamsungOne-500C.woff2") format("woff2"), url("../fonts/SamsungOne-500C.woff") format("woff"), url("../fonts/SamsungOne-500C.svg#SamsungOne-500C") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOne 300C';
+    src: local("../fonts/SamsungOne-300C"), url("../fonts/SamsungOne-300C.woff2") format("woff2"), url("../fonts/SamsungOne-300C.woff") format("woff"), url("../fonts/SamsungOne-300C.svg#SamsungOne-300C") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOne 400C';
+    src: local("../fonts/SamsungOne-400C"), url("../fonts/SamsungOne-400C.woff2") format("woff2"), url("../fonts/SamsungOne-400C.woff") format("woff"), url("../fonts/SamsungOne-400C.svg#SamsungOne-400C") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOne 700';
+    src: local("../fonts/SamsungOne-700"), url("../fonts/SamsungOne-700.woff2") format("woff2"), url("../fonts/SamsungOne-700.woff") format("woff"), url("../fonts/SamsungOne-700.svg#SamsungOne-700") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOne 500';
+    src: local("../fonts/SamsungOne-500"), url("../fonts/SamsungOne-500.woff2") format("woff2"), url("../fonts/SamsungOne-500.woff") format("woff"), url("../fonts/SamsungOne-500.svg#SamsungOne-500") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOne 400';
+    src: local("../fonts/SamsungOne-400"), url("../fonts/SamsungOne-400.woff2") format("woff2"), url("../fonts/SamsungOne-400.woff") format("woff"), url("../fonts/SamsungOne-400.svg#SamsungOne-400") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Samsung InterFace';
+    src: local("../fonts/Samsung InterFace Italic"), local("../fonts/SamsungInterFace-Italic"), url("../fonts/SamsungInterFace-Italic.woff2") format("woff2"), url("../fonts/SamsungInterFace-Italic.woff") format("woff"), url("../fonts/SamsungInterFace-Italic.svg#SamsungInterFace-Italic") format("svg");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Samsung InterFace';
+    src: local("../fonts/Samsung InterFace Bold"), local("../fonts/SamsungInterFace-Bold"), url("../fonts/SamsungInterFace-Bold.woff2") format("woff2"), url("../fonts/SamsungInterFace-Bold.woff") format("woff"), url("../fonts/SamsungInterFace-Bold.svg#SamsungInterFace-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOne 800C';
+    src: local("../fonts/SamsungOne-800C"), url("../fonts/SamsungOne-800C.woff2") format("woff2"), url("../fonts/SamsungOne-800C.woff") format("woff"), url("../fonts/SamsungOne-800C.svg#SamsungOne-800C") format("svg");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOne 300';
+    src: local("../fonts/SamsungOne-300"), url("../fonts/SamsungOne-300.woff2") format("woff2"), url("../fonts/SamsungOne-300.woff") format("woff"), url("../fonts/SamsungOne-300.svg#SamsungOne-300") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Samsung Sharp Sans';
+    src: local("../fonts/Samsung Sharp Sans"), local("../fonts/SamsungSharpSans"), url("../fonts/SamsungSharpSans.woff2") format("woff2"), url("../fonts/SamsungSharpSans.woff") format("woff"), url("../fonts/SamsungSharpSans.svg#SamsungSharpSans") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Samsung Sharp Sans';
+    src: local("../fonts/Samsung Sharp Sans Medium"), local("../fonts/SamsungSharpSans-Medium"), url("../fonts/SamsungSharpSans-Medium.woff2") format("woff2"), url("../fonts/SamsungSharpSans-Medium.woff") format("woff"), url("../fonts/SamsungSharpSans-Medium.svg#SamsungSharpSans-Medium") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Samsung Sharp Sans';
+    src: local("../fonts/Samsung Sharp Sans Bold"), local("../fonts/SamsungSharpSans-Bold"), url("../fonts/SamsungSharpSans-Bold.woff2") format("woff2"), url("../fonts/SamsungSharpSans-Bold.woff") format("woff"), url("../fonts/SamsungSharpSans-Bold.svg#SamsungSharpSans-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}

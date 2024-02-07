@@ -1,21 +1,20 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const app = express();
 const path = require('path');
 const fs = require('fs').promises;
 const ejs = require('ejs');
 
+const app = express();
 const port = 3000;
 
-app.set('view engine', 'ejs');
+
 app.use(express.static(path.join(__dirname, 'src', 'public')));
-app.set('views', path.join(__dirname, 'src', 'views'));
-
-
 app.use(bodyParser.json());
 
-app.use((req, res, next) => {
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'src', 'views'));
 
+app.use((req, res, next) => {
   res.setHeader('Cache-Control', 'no-store');
   res.setHeader('Pragma', 'no-cache');
   res.setHeader('Expires', '0');
@@ -28,54 +27,12 @@ app.get('/', (req, res) => {
 
 app.get('/home', async (req, res) => {
   try {
-      const viewsPath = path.join(__dirname, 'src', 'views');
-      const folders = await fs.readdir(viewsPath);
-
-      const foldersAndPages = await Promise.all(folders.map(async folder => {
-          const folderPath = path.join(viewsPath, folder);
-          const stats = await fs.stat(folderPath);
-
-          if (stats.isDirectory()) {
-              const files = await fs.readdir(folderPath);
-              const pages = files
-                  .filter(file => file.endsWith('.ejs'))
-                  .map(file => file.replace('.ejs', ''));
-
-              const subfolders = await Promise.all(files
-                  .filter(file => !file.endsWith('.ejs'))
-                  .map(async subfolder => {
-                      const subfolderPath = path.join(folderPath, subfolder);
-                      const subfolderStats = await fs.stat(subfolderPath);
-
-                      if (subfolderStats.isDirectory()) {
-                          const subfolderFiles = await fs.readdir(subfolderPath);
-                          const subfolderPages = subfolderFiles
-                              .filter(file => file.endsWith('.ejs'))
-                              .map(file => file.replace('.ejs', ''));
-
-                          return {
-                              folder: subfolder,
-                              pages: subfolderPages,
-                          };
-                      }
-                      return null;
-                  }));
-
-              return {
-                  folder,
-                  pages,
-                  subfolders: subfolders.filter(subfolder => subfolder !== null),
-              };
-          }
-          return null;
-      }));
-
-      const validFoldersAndPages = foldersAndPages.filter(item => item !== null);
-
-      res.render('home', { foldersAndPages: validFoldersAndPages });
+    const viewsPath = path.join(__dirname, 'src', 'views');
+    const foldersAndPages = await listSubfoldersAndPages(viewsPath);
+    res.render('home', { foldersAndPages });
   } catch (error) {
-      console.error(error);
-      res.status(500).send('Erro ao listar pastas e páginas');
+    console.error(error);
+    res.status(500).send('Erro ao listar pastas e páginas');
   }
 });
 
@@ -92,12 +49,35 @@ app.get('/view/:ejsFilePath(*)', async (req, res) => {
   }
 });
 
-app.get('/cronometro',(req, res) => {
-  res.render('cronometro/cronometro'); 
-});
+async function listSubfoldersAndPages(dir) {
+  const items = await fs.readdir(dir);
+  const foldersAndPages = [];
 
+  for (const item of items) {
+    const itemPath = path.join(dir, item);
+    const stats = await fs.stat(itemPath);
 
+    if (stats.isDirectory()) {
+      const subItems = await fs.readdir(itemPath);
+      const subfolders = subItems.filter(async subItem => {
+        const subItemPath = path.join(itemPath, subItem);
+        const subItemStats = await fs.stat(subItemPath);
+        return subItemStats.isDirectory();
+      });
 
+      const pages = subItems.filter(subItem => subItem.endsWith('.ejs'));
+      const subItemsDetails = await listSubfoldersAndPages(itemPath);
+
+      foldersAndPages.push({
+        folder: item,
+        pages: pages.map(page => page.replace('.ejs', '')),
+        subfolders: subItemsDetails
+      });
+    }
+  }
+
+  return foldersAndPages;
+}
 
 app.listen(port, () => {
   console.log(`Servidor está rodando em http://localhost:${port}`);

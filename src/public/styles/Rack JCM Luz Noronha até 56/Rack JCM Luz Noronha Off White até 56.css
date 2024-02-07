@@ -17,7 +17,6 @@ body {
     background-position: center center;
 } 
 
-
 .img-fluid.logo {
     margin-top: -10%;
     max-width: 40%;
@@ -241,7 +240,7 @@ body {
     font-family: 'Anton', sans-serif;
     width: 100%;
     background: linear-gradient(to right, #000000, #225002); 
-    -webkit-background-clip: text; 
+    background-clip: text; 
     color: transparent;
     font-size: 3vw; 
     line-height: 1.2; 

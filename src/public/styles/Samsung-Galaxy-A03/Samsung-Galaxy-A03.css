@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Samsung Sharp Sans';
-    src: url('/styles/Samsung-Galaxy-A03/font/samsungsharpsans-bold.otf') format('truetype'); /* Substitua pelo caminho real do seu arquivo de fonte */
+    src: url('/styles/Samsung-Galaxy-A03/font/samsungsharpsans-bold.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 header {
     text-align: center;
-    font-family: 'Roboto', sans-serif; /* Adicione esta linha para especificar a fonte */
+    font-family: 'Roboto', sans-serif; 
 }
 
 .logo{
@@ -20,21 +20,44 @@ header {
 .container{
     width: 100%;
     height: auto; 
+    background-color: red;
 }
-
+/* img */
 .cores{
+    width: 40vw;
     position: relative;
-    top: 10%;
+    margin-top: 10%;
     right: 25%;
 }
 
+.img2{
+    width: 4vw;
+}
+.img1{
+    width: 4vw;
+}
+
+
+/* img */
+.imgsPrincipal{
+    width:80% 
+}
+/* img */
+.imgSamsung{
+    width: 20vw;
+}
+
 h2{
-    width: 100%;
+    width: 100;
     font-weight: bold;
     color: white;
     background-color:#3caf3cb8;
     font-family: 'Samsung Sharp Sans';
     font-style: normal;
+}
+
+.titleGalaxy{
+    font-size: 3vw;
 }
 
 p{   
@@ -45,7 +68,7 @@ p{
 .title { 
     padding: 1%;
     font-size: 3vw;
-    line-height: 4.5vw;
+    line-height: 4vw;
  
 }
 
@@ -159,15 +182,15 @@ p{
     position: relative;
     font-size: 1.3vw;
 }
-
+/* img */
 .capture{
     margin-top: 3%;
 }
-
+/* img */
 .camera{
     width: 100%;
 }
-
+/* img */
 .selfie{
     width: 80%;
     position: relative;
@@ -175,8 +198,8 @@ p{
 }
 
 .nav-links-container {
-    position: relative;
-    left: 39%;
+    background-color: blue;
+    margin-left: 40%;
     display: flex;
 }
 
@@ -190,15 +213,11 @@ p{
     display: block;
 }
 
-@media screen and (min-width: 200px) and (max-width:767px){
-    body, html{
+@media screen and (min-width: 0px) and (max-width:767px){
+      body, html{
         overflow-x: hidden;
-    }
+    } 
     
-    .container{
-        background-color: rgba(255, 0, 0, 0.219);
-    }
-
     .imgsPrincipal{
         position: relative;
         left: 10%;
@@ -206,18 +225,33 @@ p{
 
     .OneUiCore{
         width: 80%;
+        position: relative;
+        left: 20%;
+        margin-bottom: -10%;
   
     }
 
     .cores{
         width: 80%;
         position: relative;
-        top: 20%;
-        right: 2%;
+        top:0%;
+        right: 0%;
+        left: 10%;
+        margin-top: 0%;
+       
     }
         
+    .imgSamsung{
+        width: 40vw;
+    }
+
+    .titleGalaxy{
+        font-size: 4vw;
+    }
+
     .title { 
        font-size: 4vw;
+       line-height: 4vw;
     }
     
     .parag{
@@ -260,7 +294,7 @@ p{
         line-height: 5vw;
         margin-left: 0%;
         font-size: 4vw;
-        margin-top: 2%;
+        margin-top: 1%;
     }
     
     .parag4{
@@ -272,7 +306,7 @@ p{
     
     .subParag2{
         position: relative;
-        margin-top: 0%;
+        margin-top: 2%;
         font-size: 2vw;
         text-align: center;
         width: 100%;
@@ -299,25 +333,21 @@ p{
         text-align: left;
         width: 100%;
         margin-left: 0%;
+
     }
     
     .title6{
-        position: relative;
-        padding: 4%;
-        font-size: 2.5vw;
-        text-align: left;
-        line-height: 3vw;
-        border-radius: 20px;
-        margin-top:0%;
-        width:100%;
+        font-size: 4vw;
+        line-height: 4.5vw;
+        margin-top:5%;
     }
     
     .parag6{
         text-align: left;
         position: relative;
-        font-size: 1.3vw;
+        font-size: 3vw;
     }
-    
+
     .capture{
         margin-top: 3%;
     }
@@ -332,22 +362,16 @@ p{
         left:10%
     }
     
+    
     .nav-links-container {
-        position: relative;
-        left: 26%;
+        width: 0%; 
+        margin-left: 40%;
         display: flex;
+        background-color: blue;
     }
-    
-    #image-container img {
-        display: none;
-        position: relative;
-        right: 1.7vw;
-    }
-    #image-container img.active {
-        display: block;
-    }
-    
- 
+
+
+
 } 
 
 
@@ -377,7 +401,7 @@ p{
     }
 
     .imgSamsung{
-        width: 80%;
+        width: 80vw;
     }
 
     .title {

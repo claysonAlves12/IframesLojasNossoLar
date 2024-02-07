@@ -1,0 +1,741 @@
+body {
+    font-family: 'Noto Serif', serif;
+}
+
+.container, .containerInicial,.containerTecnico,.containerFinal{
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  /*   background-image: linear-gradient(to right, rgba(44, 167, 44, 0.788), rgba(60, 175, 60, 0.722)); */
+}
+
+ .containerInicial{
+    background-image: url('/imgs/Rack JCM Luz Noronha até 56/fundoRack.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+} 
+
+.img-fluid.logo {
+    margin-top: -10%;
+    max-width: 40%;
+    height: auto;
+}
+
+.Titulo {
+    margin-top: -6%;
+    margin-left: 4%;
+    font-family: 'Anton', sans-serif;
+    color: #235b01;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
+    font-size: 2.9vw ; 
+    line-height: 1.2; 
+    letter-spacing: 1px; 
+    text-align: left; 
+    text-transform: uppercase;   
+}
+
+.TextHeader{
+    width: 180%;
+    margin-top: -2%;
+    margin-left: 4%;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+    font-size: 2.9vw; 
+    line-height: 1.2; 
+    letter-spacing: 1px; 
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.TextCores {
+    position: relative;
+    left: 25vw;
+    margin-top: 7%;
+    width: 90%;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+    font-size: 2.9vw; 
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.NoronhaOffWhite {
+    max-width: 85%;
+    position: relative;
+    left: 25vw;
+    margin-top: -7%;
+    font-family: 'Anton', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+    font-size: 2.9vw; 
+    letter-spacing: 1px; 
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.Noronha-Off-White {
+    background-color: #eee5e5;
+    border: solid 1px;
+    border-color: #34363431;
+}
+
+.bola.Noronha-Off-White {
+    position: relative;
+    width: 7%;
+    height: 2vw;
+    border-radius: 50%;
+    margin-top: -14%;
+    margin-bottom: 2vw;
+    margin-left: 49vw;
+    cursor: pointer;
+}
+
+.NoronhaGrafite {
+    max-width: 50%;
+    position: relative;
+    margin-top: -2vw;
+    left: 25vw;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+    font-size: 2.9vw; 
+    letter-spacing: 1px; 
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.Noronha-Grafite {
+    background-color: #726e6e;
+}
+
+.bola.Noronha-Grafite {
+    position: relative;
+    width: 7%;
+    height: 2vw;
+    border-radius: 50%;
+    margin-top: -4vw;
+    margin-bottom: 2vw;
+    margin-left: 46vw;
+    cursor: pointer;
+   
+}
+
+.img-fluid.Rack{
+    max-width: 150%;
+    height: auto;
+    padding: 1%;
+}
+
+.Rack {
+    margin-top: -16vw;
+    margin-left: 30%;
+    transition: transform 0.3s;
+}
+
+.Rack:hover {
+    transform: scale(1.1);
+}
+
+
+.img-fluid.Principal{
+    max-width: 103%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: -3%;
+}
+
+
+.containerText{
+    margin-top: 3%;
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F8F8F8;
+}
+
+.tittlep {
+    width: 200%;
+    font-family: 'Anton', sans-serif;
+    color: #235b01;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
+    font-size: 2.9vw; 
+    line-height: 1.2; 
+    letter-spacing: 1px; 
+    margin-left: 10%;
+    text-transform: uppercase;
+}
+
+.pText {
+    max-width: 100%;
+    height: auto;
+    font-size: 18px;
+    margin-top: 20%;
+    border-radius: 20px;
+    padding: 3%;
+
+}
+
+.pText::first-letter {
+    font-size: 24px;
+    font-weight: bold;
+    color: #235b01;
+}
+
+.Dimensoes {
+    font-family: 'Anton', sans-serif;
+    color: #235b01;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
+    font-size: 2.9vw;  
+    line-height: 1.2; 
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 3%;
+}
+
+.containerImgDois{
+    max-width: 100%; 
+    height: auto;
+    margin-top: -5%;
+    background-color: white;
+}
+
+.img-fluid.medidas {
+    position: relative;
+    left: 50%;
+    max-width: 100%;
+    height:auto;
+
+}
+
+.containerTecnico{
+    margin-top: -10%;
+    height: auto;
+    padding: 1%;   
+    border-radius: 20px;
+    background-image: url('/imgs/Rack JCM Luz Noronha até 56/backgroundText2.jpg');
+    background-size: cover; 
+    background-position: left; 
+    
+}
+
+.mascote{
+    width: 7vw;
+    height: auto;
+    position: relative;
+    left: 140%;
+    top: 60px;
+}
+
+.custom-alignDois {
+    position: relative;
+    left: 30%;
+}
+
+.tittleP2 {
+    font-family: 'Anton', sans-serif;
+    width: 100%;
+    background: linear-gradient(to right, #000000, #225002); 
+    background-clip: text; 
+    color: transparent;
+    font-size: 3vw; 
+    line-height: 1.2; 
+    letter-spacing: 2px; 
+    text-align: left;
+    text-transform: uppercase;
+    animation: glow 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 2px #c51515, 0 0 1px rgba(194, 27, 5, 0.548), 0 0 1px rgba(94, 6, 6, 0.247); 
+    }
+    100% {
+        text-shadow: 0 0 2px #235b01, 0 0 1px rgba(44, 112, 2, 0.63), 0 0 1px rgba(22, 56, 1, 0.349); 
+    }
+}
+
+
+.pText2 {
+    max-width: 100%;
+    font-size: 0.9vw;
+    position: relative;
+    right: 12%;
+    border-radius: 20px;
+    margin-top: 6%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.541);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Pdf {
+    position: relative;
+    left: 60%;
+    background-color: #2D952D;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px; 
+    text-align: center; 
+    font-size: 1vw; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.Pdf:hover {
+    background-color: #1F7D1F;
+    text-decoration: none; 
+    color: white;
+}
+
+.containerFinal {
+    padding: 1%;
+}
+
+.highlight-text {
+    margin-top: 1%;
+    max-width: 70%;
+    color: black;
+    font-size: 1vw; 
+    line-height: 1.2; 
+    margin-left: 14%;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 257px) and (max-width: 600px){
+    .img-fluid.logo {
+        max-width: 40%;
+        margin-top: -15%;
+        margin-left:0%;
+        margin-bottom: -1%;
+    }
+    
+    .Titulo {
+        margin-left: 8%;
+        font-size: 6.6vw ; 
+    }
+    
+    .TextHeader{
+        max-width: 90%;
+        margin-left: 8%;
+        font-size: 6.6vw; 
+    }
+    
+    .TextCores {
+        max-width: 80%;
+        margin-left: 10%;
+        margin-bottom: 0%;
+        margin-top: 1%;
+        font-size: 6.6vw; 
+        line-height: 1; 
+    }
+    
+    .NoronhaOffWhite{
+        max-width:80%;
+        margin-left:-30%;
+        margin-right: 0%;
+        margin-top:0vw;
+        font-size: 6.6vw;
+    }
+
+    .bola.Noronha-Off-White {
+        width: 3vw;
+        height: 3vw;
+        margin-left: 26vw;
+        margin-right: 0%;
+        margin-top: 8%;
+ 
+    }
+
+    .NoronhaGrafite{
+        max-width: 50%;
+        margin-left:-3.5%;
+        margin-top: -3%;
+        font-size: 3.9vw;
+    }
+
+    .bola.Noronha-Grafite {
+  
+        width: 3vw;
+        height: 3vw;
+        margin-left: 22%;
+        margin-right: 0%;
+        margin-top: -4vw;
+        
+    }
+    
+
+    .img-fluid.Rack{
+        max-width: 70%;
+        height: auto;
+        padding: 1%;
+    }
+    
+    .Rack {
+        margin-top: -2vw;
+        margin-left: -4%;
+    }
+
+    .img-fluid.Principal{
+        max-width: 70%;
+    
+        margin-left: 30%;
+    }
+   
+    
+    .tittleP {
+        font-size: 3.9vw ; 
+        margin-left: 20%;
+    }
+
+    .tittlep {
+        font-size: 3.9vw ;
+        margin-left: -11%; 
+    }
+
+    .pText {
+        max-width: 100%;
+        font-size: 2vw;
+        margin-top: 2%;
+        margin-left: -15%;
+    }
+   
+    .Dimensoes {
+        font-size: 3.9vw;  
+        margin-bottom: -7%;
+    }
+
+    .img-fluid.medidas {
+        left: 30%;
+        max-width: 70%;
+        margin-bottom: -12%;
+
+    }
+
+    .custom-alignDois {
+        left: 0%;
+    }
+    
+   
+    .tittleP2 {
+        font-size: 3.9vw; 
+        margin-left: 10%;
+    }
+    
+    .pText2 {
+        max-width: 50%;
+        font-size: 2vw;
+        right: 11%;
+        padding: 6%;
+        padding-right: 8%;
+    }
+ 
+    .Pdf {
+        top: 1vw;
+        left: 58%;
+        padding: 2%;
+        font-size: 2vw; 
+    }
+
+    .highlight-text {
+        max-width: 80%;
+        margin-left: 12%;
+        font-size: 2.8vw; 
+        text-align: center;
+    }
+    
+   
+   
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1476px){
+    .img-fluid.logo {
+        margin-left:10%;
+    }
+    
+    .Titulo {
+        margin-left: 20%;
+        font-size: 3.9vw ; 
+    }
+    
+    .TextHeader{
+        margin-left: 20%;
+        font-size: 3.9vw; 
+    }
+    
+
+    .TextCores {
+        margin-left: 45vw;
+        margin-top: 7%;
+        width: 75%;
+        font-family: 'Anton', sans-serif;
+        background-color: red;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+        font-size: 3.9vw; 
+        letter-spacing: 1px; 
+        text-align: left;
+        text-transform: uppercase;
+    }
+    
+    
+    .NoronhaOffWhite {
+        max-width: 50%;
+        position: relative;
+        left: 43vw;
+        margin-top: -4%;
+        font-family: 'Anton', sans-serif;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+        font-size: 2.9vw; 
+        letter-spacing: 1px; 
+        text-transform: uppercase;
+        text-align: left;
+    }
+    
+    .Noronha-Off-White {
+        background-color: #eee5e5;
+    }
+    
+    .bola.Noronha-Off-White {
+        position: relative;
+        width: 4%;
+        height: 2vw;
+        border-radius: 50%;
+        margin-top: -8.5%;
+        margin-bottom: 2vw;
+        margin-left: 67vw;
+        cursor: pointer;
+    }
+    
+    .NoronhaGrafite {
+        max-width: 50%;
+        position: relative;
+        margin-top: -2vw;
+        left: 43vw;
+        font-family: 'Anton', sans-serif;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+        font-size: 2.9vw; 
+        letter-spacing: 1px; 
+        text-transform: uppercase;
+        text-align: left;
+    }
+    
+    .Noronha-Grafite {
+        background-color: #726e6e;
+    }
+    
+    .bola.Noronha-Grafite {
+        position: relative;
+        width: 4%;
+        height: 2vw;
+        border-radius: 50%;
+        margin-top: -4vw;
+        margin-bottom: 2vw;
+        margin-left: 64vw;
+        cursor: pointer;
+    }
+    
+    .Rack {
+        margin-top: 50vw;
+        margin-left: 30%;
+    }
+
+    .img-fluid.Principal{
+        max-width: 150%;
+    
+        margin-left: 30%;
+    }
+   
+    
+    .tittleP {
+        font-size: 3.9vw ; 
+        margin-left: 20%;
+    }
+
+    .tittlep {
+        font-size: 3.9vw ;
+        margin-left: -11%; 
+    }
+
+    .pText {
+        max-width: 100%;
+        font-size: 2vw;
+        margin-top: 2%;
+        margin-left: -15%;
+    }
+   
+    .Dimensoes {
+        font-size: 3.9vw;  
+        margin-bottom: -7%;
+    }
+
+    .img-fluid.medidas {
+        left: 30%;
+        max-width: 150%;
+        margin-bottom: -12%;
+
+    }
+   
+    .tittleP2 {
+        font-size: 3.9vw; 
+        margin-left: 10%;
+    }
+    
+    .pText2 {
+        max-width: 120%;
+        font-size: 2vw;
+        right: 11%;
+        padding: 6%;
+        padding-right: 8%;
+    }
+ 
+    .Pdf {
+        top: 1vw;
+        left: 58%;
+        padding: 2%;
+        font-size: 2vw; 
+    }
+
+    .highlight-text {
+        max-width: 80%;
+        margin-left: 12%;
+        font-size: 2.8vw; 
+        text-align: center;
+    }
+    
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    /*   
+    .img-fluid.logo {
+        margin-left: 4%;
+    }
+
+    .Titulo {
+        margin-left: -30%;
+        font-size: 4vw;
+    }
+
+    .TextHeader{
+        margin-left: -30%;
+        font-size: 4vw;
+    }
+    
+    .TextCores {
+        top: 2vw;
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    .img-fluid.Rack{
+        margin-top: -25vw;
+        margin-bottom: -20%;
+        max-width: 140%;
+    }
+
+    .img-fluid.Principal{
+        max-width: 100%;
+    }
+    
+    .Principal {
+        position: relative;
+        margin-top: 28vw;
+    }
+    
+    .custom-align {
+        position: relative;
+        margin-top: 5vw;
+    }
+
+    .tittleP,.tittleP2{
+        font-size: 3.5vw;
+    }
+    
+    .pText, .pText2 {
+        font-size: 1.6vw;
+    }
+    
+    .Dimensoes {
+        margin-top: 4%;
+    }
+    
+    .img-fluid.medidas {
+        position: relative;
+        left: 15vw;
+        max-width: 130%;
+    }
+    
+    .custom-alignDois {
+        margin-top: 20px;
+    }
+    
+    .tittleP2{
+       margin-left: 5%;
+    }
+
+    .pText2 {
+        margin-left: 5%;  
+
+    }
+
+    .Pdf {
+        font-size: 1.5vw;
+      
+    }
+
+    .highlight-text {
+        font-weight: lighter;
+        font-size: 2.5vw; 
+
+    } */
+
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

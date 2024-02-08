@@ -19,29 +19,36 @@ header {
 
 .container{
     width: 100%;
-    height: auto; 
+    height: auto;
+
 }
-/* img */
+
 .cores{
-    width: 36vw;
+    width: 123%;
     position: relative;
-    margin-top: 10%;
-    right: 25%;
+    right: 20%;
+    top: 4vw;
 }
 
 .img2{
     width: 4vw;
 }
+
 .img1{
     width: 4vw;
 }
 
+.containerImgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-/* img */
+
 .imgsPrincipal{
     width:80% 
 }
-/* img */
+
 .imgSamsung{
     width: 20vw;
 }
@@ -181,24 +188,28 @@ p{
     position: relative;
     font-size: 1.3vw;
 }
-/* img */
+
 .capture{
     margin-top: 3%;
 }
-/* img */
+
 .camera{
     width: 100%;
 }
-/* img */
+
 .selfie{
     width: 80%;
     position: relative;
     left:10%
 }
 
-.nav-links-container {
-    margin-left: 25vw;
-    display: flex;
+.imgNav {
+    position: relative;
+    left: 3%;
+    width: 10% !important;
+    margin: 0px;
+    padding: 0px;
+
 }
 
 #image-container img {
@@ -212,7 +223,7 @@ p{
 }
 
 @media screen and (min-width: 0px) and (max-width:767px){
-      body, html{
+    body, html{
         overflow-x: hidden;
     } 
     
@@ -241,8 +252,6 @@ p{
        
     .img1{
         width: 10vw;
-        padding: 1px;
-        background-color: blue;
     }
 
     .img2{
@@ -369,11 +378,174 @@ p{
         left:10%
     }
     
-    .nav-links-container {
-        margin-left: 30%;
+    .imgNav {
+        position: relative;
+        left: 3%;
+        width: 16% !important;
     }
 
 } 
+
+
+@media screen and (min-width: 992px) and (max-width:1500px){
+    body, html{
+        overflow-x: hidden;
+    } 
+    
+    .img2{
+        width: 6vw;
+    }
+    
+    .img1{
+        width: 6vw;
+    }
+
+    .parag{
+        font-size: 1.5vw;
+    }
+    
+    .subParag1{
+        font-size: 1vw;
+    }
+     
+    .parag2{
+        font-size: 1.5vw;
+    }
+    
+    .parag3{
+        font-size: 1.5vw;
+        text-align: left;
+        margin-left: 4%;
+    }
+    
+    .parag4{
+        font-size: 1.5vw;
+    }
+    
+    .subParag2{
+        font-size: 1vw;
+    }
+    
+    .parag5{
+        font-size: 1.5vw;
+    }
+    
+    .subParag3{
+        font-size: 1vw;
+    }
+    
+    .parag6{
+        font-size: 1.5vw;
+    }
+    
+}    
+
+
+@media screen and (min-width:768px) and (max-width:991px){
+
+    body, html{
+        overflow-x: hidden;
+    } 
+
+    .container{
+        width: 100%;
+        height: auto;
+    }
+    .cores{
+        width: 123%;
+        position: relative;
+        right: 20%;
+        top: 4vw;
+    }
+    
+    .img2{
+        width: 7vw;
+    }
+    
+    .img1{
+        width: 7vw;
+    }
+
+    .parag{
+        font-size: 2vw;
+    }
+    
+    .subParag1{
+        font-size: 1.5vw;
+    }
+     
+    .parag2{
+        font-size: 2vw;
+    }
+    
+    .parag3{
+        font-size: 2vw;
+        text-align: left;
+        margin-left: 4%;
+    }
+    
+    .parag4{
+        font-size: 2vw;
+    }
+    
+    .subParag2{
+        font-size:1.5vw;
+        margin-left: 10%;
+    }
+     
+    .parag5{
+        font-size: 2vw;
+    }
+    
+    .subParag3{
+        font-size: 1.5vw;
+    }
+    
+    .parag6{
+        width: 120%;
+        font-size: 2vw;
+    }
+ 
+    .capture{
+        margin-top: 3%;
+    }
+
+    .camera{
+        width: 100%;
+    }
+
+    .selfie{
+        width: 80%;
+        position: relative;
+        left:10%
+    }
+    
+    .title5{
+        margin-top: -1%;
+    }
+
+    .google{
+        margin-top: 2%;
+    }
+
+    .imgNav {
+        position: relative;
+        left: 2%;
+        width: 10% !important;
+        margin: 0px;
+        padding: 0px;
+    
+    }
+    
+}
+
+
+
+
+
+
+
+
 
 
 

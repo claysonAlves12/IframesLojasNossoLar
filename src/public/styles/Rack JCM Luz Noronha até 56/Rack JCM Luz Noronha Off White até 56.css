@@ -1,9 +1,10 @@
 body {
     font-family: 'Noto Serif', serif;
+
 }
 
-.container, .containerInicial,.containerTecnico,.containerFinal{
-    width: 60%;
+.containerInicial,.containerTecnico,.containerFinal{
+    width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -50,11 +51,13 @@ body {
     text-transform: uppercase;
 }
 
-.TextCores {
+.containerGeralCores{
     position: relative;
-    left: 25vw;
-    margin-top: 7%;
-    width: 90%;
+    top: 6vw;
+    left: 80%;
+}
+
+.TextCores {
     font-family: 'Anton', sans-serif;
     color: white;
     text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
@@ -63,11 +66,13 @@ body {
     text-transform: uppercase;
 }
 
-.NoronhaOffWhite {
-    max-width: 85%;
+.cor-container{
+    display: flex;
     position: relative;
-    left: 25vw;
-    margin-top: -7%;
+    margin-top: -6%;
+}
+
+.NoronhaOffWhite {
     font-family: 'Anton', sans-serif;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
@@ -78,27 +83,19 @@ body {
 }
 
 .Noronha-Off-White {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 80%;
+    cursor: pointer;
+    position: relative;
+    left: 1vw;
+    margin-top: 1.2vw;
     background-color: #eee5e5;
     border: solid 1px;
     border-color: #34363431;
 }
 
-.bola.Noronha-Off-White {
-    position: relative;
-    width: 7%;
-    height: 2vw;
-    border-radius: 50%;
-    margin-top: -14%;
-    margin-bottom: 2vw;
-    margin-left: 49vw;
-    cursor: pointer;
-}
-
 .NoronhaGrafite {
-    max-width: 50%;
-    position: relative;
-    margin-top: -2vw;
-    left: 25vw;
     font-family: 'Anton', sans-serif;
     color: white;
     text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
@@ -109,72 +106,63 @@ body {
 }
 
 .Noronha-Grafite {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 80%;
+    cursor: pointer;
+    position: relative;
+    left: 1vw;
+    margin-top: 1.3vw;
     background-color: #726e6e;
 }
 
-.bola.Noronha-Grafite {
-    position: relative;
-    width: 7%;
-    height: 2vw;
-    border-radius: 50%;
-    margin-top: -4vw;
-    margin-bottom: 2vw;
-    margin-left: 46vw;
-    cursor: pointer;
-   
-}
-
-.img-fluid.Rack{
-    max-width: 150%;
-    height: auto;
-    padding: 1%;
-}
-
-.Rack {
-    margin-top: -16vw;
-    margin-left: 30%;
+.Rackimg{
+    margin-top: -19vw;
+    width: 100%;
     transition: transform 0.3s;
 }
 
-.Rack:hover {
+.Rackimg:hover {
     transform: scale(1.1);
 }
 
-
-.img-fluid.Principal{
+.Principal{
     max-width: 103%;
     height: auto;
-    margin-top: 2%;
-    margin-left: -3%;
+    position: relative;
+    left: -3%;
 }
 
-
-.containerText{
-    margin-top: 3%;
-    width: 60%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #F8F8F8;
+.titleE{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .tittlep {
-    width: 200%;
     font-family: 'Anton', sans-serif;
     color: #235b01;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
     font-size: 2.9vw; 
     line-height: 1.2; 
     letter-spacing: 1px; 
-    margin-left: 10%;
     text-transform: uppercase;
 }
 
+.containerText{
+    width: 100%;
+    height: auto;
+    margin-bottom: 4%;
+}
+
 .pText {
+    text-align: left;
     max-width: 100%;
     height: auto;
-    font-size: 18px;
-    margin-top: 20%;
+    font-size: 1.2vw;
+    margin-top: 5%;
     border-radius: 20px;
     padding: 3%;
 
@@ -198,16 +186,13 @@ body {
 }
 
 .containerImgDois{
-    max-width: 100%; 
-    height: auto;
-    margin-top: -5%;
-    background-color: white;
+    margin-top: -10%;
 }
 
-.img-fluid.medidas {
+.medidas {
+    width: 150% ;
     position: relative;
-    left: 50%;
-    max-width: 100%;
+    left: 25%;
     height:auto;
 
 }
@@ -227,8 +212,9 @@ body {
     width: 7vw;
     height: auto;
     position: relative;
-    left: 140%;
-    top: 60px;
+    left:140%;
+    top: 6vw;
+    z-index: 1000;
 }
 
 .custom-alignDois {
@@ -258,7 +244,6 @@ body {
         text-shadow: 0 0 2px #235b01, 0 0 1px rgba(44, 112, 2, 0.63), 0 0 1px rgba(22, 56, 1, 0.349); 
     }
 }
-
 
 .pText2 {
     max-width: 100%;
@@ -308,411 +293,229 @@ body {
 }
 
 
-@media screen and (min-width: 257px) and (max-width: 600px){
-    .img-fluid.logo {
-        max-width: 40%;
-        margin-top: -15%;
-        margin-left:0%;
-        margin-bottom: -1%;
-    }
-    
-    .Titulo {
-        margin-left: 8%;
-        font-size: 6.6vw ; 
-    }
-    
-    .TextHeader{
-        max-width: 90%;
-        margin-left: 8%;
-        font-size: 6.6vw; 
-    }
-    
-    .TextCores {
-        max-width: 80%;
-        margin-left: 10%;
-        margin-bottom: 0%;
-        margin-top: 1%;
-        font-size: 6.6vw; 
-        line-height: 1; 
-    }
-    
-    .NoronhaOffWhite{
-        max-width:80%;
-        margin-left:-30%;
-        margin-right: 0%;
-        margin-top:0vw;
-        font-size: 6.6vw;
-    }
-
-    .bola.Noronha-Off-White {
-        width: 3vw;
-        height: 3vw;
-        margin-left: 26vw;
-        margin-right: 0%;
-        margin-top: 8%;
- 
-    }
-
-    .NoronhaGrafite{
-        max-width: 50%;
-        margin-left:-3.5%;
-        margin-top: -3%;
-        font-size: 3.9vw;
-    }
-
-    .bola.Noronha-Grafite {
-  
-        width: 3vw;
-        height: 3vw;
-        margin-left: 22%;
-        margin-right: 0%;
-        margin-top: -4vw;
-        
-    }
-    
-
-    .img-fluid.Rack{
-        max-width: 70%;
-        height: auto;
-        padding: 1%;
-    }
-    
-    .Rack {
-        margin-top: -2vw;
-        margin-left: -4%;
-    }
-
-    .img-fluid.Principal{
-        max-width: 70%;
-    
-        margin-left: 30%;
-    }
-   
-    
-    .tittleP {
-        font-size: 3.9vw ; 
-        margin-left: 20%;
-    }
-
-    .tittlep {
-        font-size: 3.9vw ;
-        margin-left: -11%; 
-    }
+@media screen and (min-width: 992px) and (max-width:1500px){
+    body, html{
+        overflow-x: hidden;
+    } 
 
     .pText {
-        max-width: 100%;
-        font-size: 2vw;
-        margin-top: 2%;
-        margin-left: -15%;
-    }
-   
-    .Dimensoes {
-        font-size: 3.9vw;  
-        margin-bottom: -7%;
-    }
-
-    .img-fluid.medidas {
-        left: 30%;
-        max-width: 70%;
-        margin-bottom: -12%;
-
-    }
-
-    .custom-alignDois {
-        left: 0%;
+        font-size: 1.55vw;
     }
     
-   
-    .tittleP2 {
-        font-size: 3.9vw; 
-        margin-left: 10%;
+    .pText::first-letter {
+        font-size: 1.7vw;
     }
     
     .pText2 {
-        max-width: 50%;
-        font-size: 2vw;
-        right: 11%;
-        padding: 6%;
-        padding-right: 8%;
-    }
- 
-    .Pdf {
-        top: 1vw;
-        left: 58%;
-        padding: 2%;
-        font-size: 2vw; 
-    }
-
-    .highlight-text {
-        max-width: 80%;
-        margin-left: 12%;
-        font-size: 2.8vw; 
-        text-align: center;
+        font-size: 1.2vw;
     }
     
-   
-   
+    .Pdf {
+        font-size: 1.2vw; 
+    }
+    
+    .highlight-text {
+        font-size: 1.2vw; 
+    }
+    
 }
 
+@media screen and (min-width:768px) and (max-width:991px){
+    body, html{
+        overflow-x: hidden;
+    } 
 
-
-@media screen and (min-width: 769px) and (max-width: 1476px){
     .img-fluid.logo {
-        margin-left:10%;
+        max-width: 50%;
     }
     
     .Titulo {
-        margin-left: 20%;
-        font-size: 3.9vw ; 
+        font-size: 3.5vw ; 
     }
     
     .TextHeader{
-        margin-left: 20%;
-        font-size: 3.9vw; 
+        width: 200%;
+        font-size: 3.5vw; 
     }
     
-
     .TextCores {
-        margin-left: 45vw;
-        margin-top: 7%;
-        width: 75%;
-        font-family: 'Anton', sans-serif;
-        background-color: red;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
-        font-size: 3.9vw; 
-        letter-spacing: 1px; 
-        text-align: left;
-        text-transform: uppercase;
+        font-size: 3.5vw; 
     }
-    
-    
+
     .NoronhaOffWhite {
-        max-width: 50%;
-        position: relative;
-        left: 43vw;
-        margin-top: -4%;
-        font-family: 'Anton', sans-serif;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
-        font-size: 2.9vw; 
-        letter-spacing: 1px; 
-        text-transform: uppercase;
-        text-align: left;
+        font-size: 3.5vw; 
     }
     
     .Noronha-Off-White {
-        background-color: #eee5e5;
-    }
-    
-    .bola.Noronha-Off-White {
-        position: relative;
-        width: 4%;
-        height: 2vw;
-        border-radius: 50%;
-        margin-top: -8.5%;
-        margin-bottom: 2vw;
-        margin-left: 67vw;
-        cursor: pointer;
+        margin-top: 1.6vw;
     }
     
     .NoronhaGrafite {
-        max-width: 50%;
-        position: relative;
-        margin-top: -2vw;
-        left: 43vw;
-        font-family: 'Anton', sans-serif;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
-        font-size: 2.9vw; 
-        letter-spacing: 1px; 
-        text-transform: uppercase;
-        text-align: left;
+        font-size: 3.5vw; 
     }
     
     .Noronha-Grafite {
-        background-color: #726e6e;
+        margin-top: 1.6vw;
     }
     
-    .bola.Noronha-Grafite {
-        position: relative;
-        width: 4%;
-        height: 2vw;
-        border-radius: 50%;
-        margin-top: -4vw;
-        margin-bottom: 2vw;
-        margin-left: 64vw;
-        cursor: pointer;
-    }
-    
-    .Rack {
-        margin-top: 50vw;
-        margin-left: 30%;
-    }
-
-    .img-fluid.Principal{
-        max-width: 150%;
-    
-        margin-left: 30%;
-    }
-   
-    
-    .tittleP {
-        font-size: 3.9vw ; 
-        margin-left: 20%;
+    .Rackimg{
+        margin-top: -24vw;
     }
 
     .tittlep {
-        font-size: 3.9vw ;
-        margin-left: -11%; 
+        font-size: 3.5vw; 
     }
 
     .pText {
-        max-width: 100%;
-        font-size: 2vw;
-        margin-top: 2%;
-        margin-left: -15%;
+        font-size: 1.5vw;    
     }
-   
+    
     .Dimensoes {
-        font-size: 3.9vw;  
-        margin-bottom: -7%;
+        font-size: 3.5vw;  
     }
-
-    .img-fluid.medidas {
-        left: 30%;
-        max-width: 150%;
-        margin-bottom: -12%;
-
-    }
-   
+    
     .tittleP2 {
-        font-size: 3.9vw; 
-        margin-left: 10%;
+        font-size: 3.5w; 
     }
     
     .pText2 {
-        max-width: 120%;
-        font-size: 2vw;
-        right: 11%;
-        padding: 6%;
-        padding-right: 8%;
+        max-width: 150%;
+        font-size: 1.5vw;
+        position: relative;
     }
- 
+    
     .Pdf {
-        top: 1vw;
-        left: 58%;
-        padding: 2%;
-        font-size: 2vw; 
+        font-size: 1.4vw; 
     }
 
     .highlight-text {
-        max-width: 80%;
-        margin-left: 12%;
-        font-size: 2.8vw; 
-        text-align: center;
+        font-size: 1.5vw; 
     }
-    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-    /*   
-    .img-fluid.logo {
-        margin-left: 4%;
+}    
+
+
+@media screen and (min-width: 0px) and (max-width:767px){
+    body, html{
+        overflow-x: hidden;
+    } 
+
+    .container{
+        width: 100%;
     }
 
     .Titulo {
-        margin-left: -30%;
-        font-size: 4vw;
+        margin-top: -8%;
+        font-size: 5vw ; 
     }
-
+    
     .TextHeader{
-        margin-left: -30%;
-        font-size: 4vw;
+        width: 90%;
+        font-size: 5vw; 
+    }
+    
+    .containerGeralCores{
+        left: 30%;
     }
     
     .TextCores {
-        top: 2vw;
-        width: 100%;
-        font-size: 4vw;
-    }
-
-    .img-fluid.Rack{
-        margin-top: -25vw;
-        margin-bottom: -20%;
-        max-width: 140%;
-    }
-
-    .img-fluid.Principal{
-        max-width: 100%;
+        font-size: 5vw; 
     }
     
-    .Principal {
-        position: relative;
-        margin-top: 28vw;
+    .NoronhaOffWhite {
+        font-size: 4.5vw; 
     }
     
-    .custom-align {
-        position: relative;
-        margin-top: 5vw;
+    .Noronha-Off-White {
+        width: 4vw;
+        height: 4vw;
+    }
+    
+    .NoronhaGrafite {
+        font-size: 4.5vw; 
+    }
+    
+    .Noronha-Grafite {
+        width: 4vw;
+        height: 4vw;
+    }
+    
+    .Rackimg{
+        margin-top: -26vw;
+        margin-left: -2%;
+    }
+    
+    .Rackimg:hover {
+        transform: scale(1.1);
+    }
+    
+    .Principal{
+        max-width: 106%;
+    }
+    
+    .titleE{
+        margin-bottom: -5%;
     }
 
-    .tittleP,.tittleP2{
-        font-size: 3.5vw;
+    .tittlep {
+        font-size: 5vw; 
+    }
+
+    .pText {
+        font-size: 2.5vw;    
     }
     
-    .pText, .pText2 {
-        font-size: 1.6vw;
+    .pText::first-letter {
+        font-size: 28px;
     }
     
     .Dimensoes {
-        margin-top: 4%;
+        font-size: 5vw;  
     }
     
-    .img-fluid.medidas {
+    .containerImgDois{
+        margin-top: -10%;
+    }
+    
+    .medidas {
+        width: 114% ;
         position: relative;
-        left: 15vw;
-        max-width: 130%;
+        left: -7%;
+    }
+
+    .mascote{
+        width: 9vw;
+        height: auto;
+        position: relative;
+        left:85%;
+        top: 10vw;
+        z-index: 1000;
     }
     
     .custom-alignDois {
-        margin-top: 20px;
+        position: relative;
+        left: 10%;
     }
     
-    .tittleP2{
-       margin-left: 5%;
+    .tittleP2 {
+        font-size: 5vw;
+        margin-left: 10%; 
     }
-
+    
     .pText2 {
-        margin-left: 5%;  
-
+        font-size: 2.5vw;
+        margin-top: 2%;
     }
-
-    .Pdf {
-        font-size: 1.5vw;
-      
-    }
-
-    .highlight-text {
-        font-weight: lighter;
-        font-size: 2.5vw; 
-
-    } */
-
-}
     
-
-
+    .Pdf {
+        left: 60%;
+        font-size: 2.5vw; 
+    }
+    
+    .highlight-text {
+        font-size: 2.2vw; 
+        text-align: left;
+    }
+}
 
 
 

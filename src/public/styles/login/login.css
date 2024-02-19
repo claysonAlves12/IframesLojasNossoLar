@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/imgs/login/background.jpg');
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  min-height: 75%;
+  max-width: 30%;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.623);
+}
+
+.title{
+  position: relative;
+  top: -2vw;
+}
+
+@keyframes alternarCores {
+  0% {
+    color: #ff3333; /* Vermelho */
+  }
+  50% {
+    color: #218109; /* Verde */
+  }
+  100% {
+    color: #ff3333; /* Vermelho */
+  }
+}
+
+h1 {
+  font-size: 3vw;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: alternarCores 3s infinite; /* Alternando cores a cada 3 segundos */
+}
+
+.principal{
+  width: 150%;
+}
+
+@keyframes alternarSombra {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 51, 51, 0.904); /* Vermelho */
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(33, 129, 9, 0.904); /* Verde */
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 51, 51, 0.904); /* Vermelho */
+  }
+}
+
+.login {
+  position: relative;
+  top: -1vw;
+  left: 6vw;
+  width: 45%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 2%;
+  box-shadow: 0 0 10px rgba(33, 129, 9, 0.904); 
+  animation: alternarSombra 3s infinite; 
+}
+
+.mascote {
+  position: relative;
+  top: 4vw;
+  left: 61vw;
+  width: 150px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 40px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  border: none; 
+  border-bottom: 2px solid #0000004b;
+  border-radius: 0;
+  outline: none; 
+}
+
+.icon {
+  position: relative;
+  top: 2.1vw;
+  left: -1.7vw;
+  width: 1.5vw; /* Ajuste de acordo com o tamanho desejado */
+  height: 1.5vw; /* Ajuste de acordo com o tamanho desejado */
+  margin-right: 10px; /* Espaçamento entre a imagem e o campo de entrada */
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-control {
+  padding: 4%; 
+}
+
+.form-check-label{
+  font-size: 0.9vw;
+  font-weight: lighter;
+
+}
+
+.forgot-password{
+  width: 150%;
+  font-size: 0.9vw;
+}
+
+.btn {
+  position: relative;
+  left: 5vw;
+  max-width: 50%;
+  padding: 10px 10px;
+  border-radius: 20px;
+  background-color: rgb(1, 88, 23);
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: red;
+}
+
+
+@media screen and (min-width: 1500px) and (max-width:1880px){
+  
+}
+
+@media screen and (min-width: 992px) and (max-width:1500px){
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+}
+@media screen and (min-width: 0px) and (max-width:767px){
+}

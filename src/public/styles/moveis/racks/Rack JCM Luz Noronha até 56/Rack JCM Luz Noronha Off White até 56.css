@@ -1,0 +1,541 @@
+body {
+    font-family: 'Noto Serif', serif;
+
+}
+
+.containerInicial,.containerTecnico,.containerFinal{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  /*   background-image: linear-gradient(to right, rgba(44, 167, 44, 0.788), rgba(60, 175, 60, 0.722)); */
+}
+
+ .containerInicial{
+    background-image: url('/imgs/moveis/rack/Rack JCM Luz Noronha até 56/fundoRack.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+} 
+
+.img-fluid.logo {
+    max-width: 40%;
+    height: auto;
+}
+
+.Titulo {
+    margin-left: 4%;
+    font-family: 'Anton', sans-serif;
+    color: #235b01;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
+    font-size: 2.9vw ; 
+    line-height: 1.2; 
+    letter-spacing: 1px; 
+    text-align: left; 
+    text-transform: uppercase;   
+}
+
+.TextHeader{
+    width: 180%;
+    margin-top: -2%;
+    margin-left: 4%;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+    font-size: 2.9vw; 
+    line-height: 1.2; 
+    letter-spacing: 1px; 
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.containerGeralCores{
+    position: relative;
+    top: 6vw;
+    left: 80%;
+}
+
+.TextCores {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+    font-size: 2.9vw; 
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.cor-container{
+    display: flex;
+    position: relative;
+    margin-top: -6%;
+}
+
+.NoronhaOffWhite {
+    font-family: 'Anton', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+    font-size: 2.9vw; 
+    letter-spacing: 1px; 
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.Noronha-Off-White {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 80%;
+    cursor: pointer;
+    position: relative;
+    left: 1vw;
+    margin-top: 1.2vw;
+    background-color: #eee5e5;
+    border: solid 1px;
+    border-color: #34363431;
+}
+
+.NoronhaGrafite {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(6, 66, 3, 0.692);
+    font-size: 2.9vw; 
+    letter-spacing: 1px; 
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.Noronha-Grafite {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 80%;
+    cursor: pointer;
+    position: relative;
+    left: 1vw;
+    margin-top: 1.3vw;
+    background-color: #726e6e;
+}
+
+.Rackimg{
+    margin-top: -19vw;
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.Rackimg:hover {
+    transform: scale(1.1);
+}
+
+.Principal{
+    max-width: 103%;
+    height: auto;
+    position: relative;
+    left: -3%;
+}
+
+.titleE{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tittlep {
+    font-family: 'Anton', sans-serif;
+    color: #235b01;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
+    font-size: 2.9vw; 
+    line-height: 1.2; 
+    letter-spacing: 1px; 
+    text-transform: uppercase;
+}
+
+.containerText{
+    width: 100%;
+    height: auto;
+    margin-bottom: 4%;
+}
+
+.pText {
+    text-align: left;
+    max-width: 100%;
+    height: auto;
+    font-size: 1.2vw;
+    margin-top: 5%;
+    border-radius: 20px;
+    padding: 3%;
+
+}
+
+.pText::first-letter {
+    font-size: 24px;
+    font-weight: bold;
+    color: #235b01;
+}
+
+.Dimensoes {
+    font-family: 'Anton', sans-serif;
+    color: #235b01;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
+    font-size: 2.9vw;  
+    line-height: 1.2; 
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 3%;
+}
+
+.containerImgDois{
+    margin-top: -10%;
+}
+
+.medidas {
+    width: 150% ;
+    position: relative;
+    left: 25%;
+    height:auto;
+
+}
+
+.containerTecnico{
+    margin-top: -10%;
+    height: auto;
+    padding: 1%;   
+    border-radius: 20px;
+    background-image: url('/imgs/Rack JCM Luz Noronha até 56/backgroundText2.jpg');
+    background-size: cover; 
+    background-position: left; 
+    
+}
+
+.mascote{
+    width: 7vw;
+    height: auto;
+    position: relative;
+    left:140%;
+    top: 6vw;
+    z-index: 1000;
+}
+
+.custom-alignDois {
+    position: relative;
+    left: 30%;
+}
+
+.tittleP2 {
+    font-family: 'Anton', sans-serif;
+    width: 100%;
+    background: linear-gradient(to right, #000000, #225002); 
+    background-clip: text; 
+    color: transparent;
+    font-size: 3vw; 
+    line-height: 1.2; 
+    letter-spacing: 2px; 
+    text-align: left;
+    text-transform: uppercase;
+    animation: glow 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 2px #c51515, 0 0 1px rgba(194, 27, 5, 0.548), 0 0 1px rgba(94, 6, 6, 0.247); 
+    }
+    100% {
+        text-shadow: 0 0 2px #235b01, 0 0 1px rgba(44, 112, 2, 0.63), 0 0 1px rgba(22, 56, 1, 0.349); 
+    }
+}
+
+.pText2 {
+    max-width: 100%;
+    font-size: 0.9vw;
+    position: relative;
+    right: 12%;
+    border-radius: 20px;
+    margin-top: 6%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.541);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Pdf {
+    position: relative;
+    left: 60%;
+    background-color: #2D952D;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px; 
+    text-align: center; 
+    font-size: 1vw; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.Pdf:hover {
+    background-color: #1F7D1F;
+    text-decoration: none; 
+    color: white;
+}
+
+.containerFinal {
+    padding: 1%;
+}
+
+.highlight-text {
+    margin-top: 1%;
+    max-width: 70%;
+    color: black;
+    font-size: 1vw; 
+    line-height: 1.2; 
+    margin-left: 14%;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 992px) and (max-width:1500px){
+    body, html{
+        overflow-x: hidden;
+    } 
+
+    .pText {
+        font-size: 1.55vw;
+    }
+    
+    .pText::first-letter {
+        font-size: 1.7vw;
+    }
+    
+    .pText2 {
+        font-size: 1.2vw;
+    }
+    
+    .Pdf {
+        font-size: 1.2vw; 
+    }
+    
+    .highlight-text {
+        font-size: 1.2vw; 
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    body, html{
+        overflow-x: hidden;
+    } 
+
+    .img-fluid.logo {
+        max-width: 50%;
+    }
+    
+    .Titulo {
+        font-size: 3.5vw ; 
+    }
+    
+    .TextHeader{
+        width: 200%;
+        font-size: 3.5vw; 
+    }
+    
+    .TextCores {
+        font-size: 3.5vw; 
+    }
+
+    .NoronhaOffWhite {
+        font-size: 3.5vw; 
+    }
+    
+    .Noronha-Off-White {
+        margin-top: 1.6vw;
+    }
+    
+    .NoronhaGrafite {
+        font-size: 3.5vw; 
+    }
+    
+    .Noronha-Grafite {
+        margin-top: 1.6vw;
+    }
+    
+    .Rackimg{
+        margin-top: -24vw;
+    }
+
+    .tittlep {
+        font-size: 3.5vw; 
+    }
+
+    .pText {
+        font-size: 1.5vw;    
+    }
+    
+    .Dimensoes {
+        font-size: 3.5vw;  
+    }
+    
+    .tittleP2 {
+        font-size: 3.5w; 
+    }
+    
+    .pText2 {
+        max-width: 150%;
+        font-size: 1.5vw;
+        position: relative;
+    }
+    
+    .Pdf {
+        font-size: 1.4vw; 
+    }
+
+    .highlight-text {
+        font-size: 1.5vw; 
+    }
+}    
+
+
+@media screen and (min-width: 0px) and (max-width:767px){
+    body, html{
+        overflow-x: hidden;
+    } 
+
+    .container{
+        width: 100%;
+    }
+
+    .Titulo {
+        margin-top: -8%;
+        font-size: 5vw ; 
+    }
+    
+    .TextHeader{
+        width: 90%;
+        font-size: 5vw; 
+    }
+    
+    .containerGeralCores{
+        left: 30%;
+    }
+    
+    .TextCores {
+        font-size: 5vw; 
+    }
+    
+    .NoronhaOffWhite {
+        font-size: 4.5vw; 
+    }
+    
+    .Noronha-Off-White {
+        width: 4vw;
+        height: 4vw;
+    }
+    
+    .NoronhaGrafite {
+        font-size: 4.5vw; 
+    }
+    
+    .Noronha-Grafite {
+        width: 4vw;
+        height: 4vw;
+    }
+    
+    .Rackimg{
+        margin-top: -26vw;
+        margin-left: -2%;
+    }
+    
+    .Rackimg:hover {
+        transform: scale(1.1);
+    }
+    
+    .Principal{
+        max-width: 106%;
+    }
+    
+    .titleE{
+        margin-bottom: -5%;
+    }
+
+    .tittlep {
+        font-size: 5vw; 
+    }
+
+    .pText {
+        font-size: 2.5vw;    
+    }
+    
+    .pText::first-letter {
+        font-size: 28px;
+    }
+    
+    .Dimensoes {
+        font-size: 5vw;  
+    }
+    
+    .containerImgDois{
+        margin-top: -10%;
+    }
+    
+    .medidas {
+        width: 114% ;
+        position: relative;
+        left: -7%;
+    }
+
+    .mascote{
+        width: 9vw;
+        height: auto;
+        position: relative;
+        left:85%;
+        top: 10vw;
+        z-index: 1000;
+    }
+    
+    .custom-alignDois {
+        position: relative;
+        left: 10%;
+    }
+    
+    .tittleP2 {
+        font-size: 5vw;
+        margin-left: 10%; 
+    }
+    
+    .pText2 {
+        font-size: 2.5vw;
+        margin-top: 2%;
+    }
+    
+    .Pdf {
+        left: 60%;
+        font-size: 2.5vw; 
+    }
+    
+    .highlight-text {
+        font-size: 2.2vw; 
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

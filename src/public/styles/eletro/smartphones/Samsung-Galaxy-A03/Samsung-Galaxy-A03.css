@@ -1,0 +1,541 @@
+@font-face {
+    font-family: 'Samsung Sharp Sans';
+    src: url('/styles/Samsung-Galaxy-A03/font/samsungsharpsans-bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.logo{
+    width: 40%;
+    margin-top: -15%;
+    margin-bottom: -10%;
+    margin-left: -4%;
+}
+
+.container{
+    margin-top: 2%;
+    width: 100%;
+    height: auto;
+
+}
+
+.cores{
+    width: 123%;
+    position: relative;
+    right: 20%;
+    top: 4vw;
+}
+
+.img2{
+    width: 4vw;
+}
+
+.img1{
+    width: 4vw;
+}
+
+.containerImgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imgsPrincipal{
+    width:80% 
+}
+
+.imgSamsung{
+    width: 20vw;
+}
+
+h2{
+    width: 100;
+    font-weight: bold;
+    color: white;
+    background-color:#3caf3cb8;
+    font-family: 'Samsung Sharp Sans';
+    font-style: normal;
+}
+
+.titleGalaxy{
+    font-size: 3vw;
+}
+
+p{   
+    color: rgba(0, 0, 0, 0.658);
+    font-family: 'SamsungOne 300'; 
+}
+
+.title { 
+    padding: 1%;
+    font-size: 3vw;
+    line-height: 4vw;
+ 
+}
+
+.parag{
+    font-size: 1.3vw;
+}
+
+.subParag1{
+    font-size: 0.8vw;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.titleAp { 
+    padding: 1%;
+    font-size: 2.5vw;
+    line-height: 4.5vw;
+}
+
+.parag2{
+    font-size: 1.3vw;
+}
+
+.title2{
+    padding: 4%;
+    font-size: 2vw; 
+    text-align: left;
+    margin-left: 4%; 
+    line-height: 3vw;
+    margin-top: 10%; 
+    border-radius: 20px;
+}
+
+.parag3{
+    font-size: 1.3vw;
+    text-align: left;
+    margin-left: 4%;
+}
+
+.titleFoco{
+    font-size: 2.5vw; 
+    line-height: 3.5vw;
+    margin-top: 2%;
+    padding: 1%;
+    font-size: 3vw;
+}
+
+.title3{
+    padding: 4%;
+    text-align: left;
+    line-height: 3vw;
+    border-radius: 20px;
+    position: relative;
+    margin-left: -10%;
+    font-size: 2.5vw;
+    margin-top: 5%;
+}
+
+.parag4{
+    text-align: left;
+    width: 80%;
+    font-size: 1.3vw;
+    margin-left: -9%;
+}
+
+.subParag2{
+    font-size: 0.8vw;
+    text-align: left;
+    width: 100%;
+    margin-left: 25%;
+}
+
+.title5{
+    position: relative;
+    padding: 4%;
+    right: 20%;
+    font-size: 3vw;
+    text-align: left;
+    line-height: 3vw;
+    border-radius: 20px;
+    margin-top:15%;
+    width:120%;
+}
+
+.parag5{
+    text-align: left;
+    width: 125%;
+    font-size: 1.3vw;
+    margin-left: -20%;
+}
+
+.subParag3{
+    font-size: 0.8vw;
+    text-align: left;
+    width: 100%;
+    margin-left: -20%;
+}
+
+.title6{
+    position: relative;
+    padding: 4%;
+    font-size: 2.5vw;
+    text-align: left;
+    line-height: 3vw;
+    border-radius: 20px;
+    margin-top:15%;
+    width:100%;
+}
+
+.parag6{
+    text-align: left;
+    position: relative;
+    font-size: 1.3vw;
+}
+
+.capture{
+    margin-top: 3%;
+}
+
+.camera{
+    width: 100%;
+}
+
+.selfie{
+    width: 80%;
+    position: relative;
+    left:10%
+}
+
+.imgNav {
+    position: relative;
+    left: 3%;
+    width: 10% !important;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#image-container img {
+    display: none;
+    position: relative;
+    right: 1.7vw;
+}
+
+#image-container img.active {
+    display: block;
+}
+
+@media screen and (min-width: 0px) and (max-width:767px){
+    body, html{
+        overflow-x: hidden;
+    } 
+    
+    .imgsPrincipal{
+        position: relative;
+        left: 10%;
+    }
+
+    .OneUiCore{
+        width: 80%;
+        position: relative;
+        left: 20%;
+        margin-bottom: -10%;
+  
+    }
+
+    .cores{
+        width: 80%;
+        position: relative;
+        top:0%;
+        right: 0%;
+        left: 10%;
+        margin-top: 0%;
+       
+    }
+       
+    .img1{
+        width: 10vw;
+    }
+
+    .img2{
+        width: 10vw;
+    }
+    .imgSamsung{
+        width: 40vw;
+    }
+
+    .titleGalaxy{
+        font-size: 4vw;
+    }
+
+    .title { 
+       font-size: 4vw;
+       line-height: 4vw;
+    }
+    
+    .parag{
+        font-size: 3vw;
+    }
+    
+    .subParag1{
+        font-size: 2vw;
+    }
+    
+    .titleAp { 
+        font-size: 4vw;
+    }
+    
+    .parag2{
+        font-size: 3vw;
+    }
+    
+    .title2{
+        font-size: 4vw; 
+        line-height: 5vw;
+    }
+    
+    .parag3{
+        font-size: 3vw;
+        text-align: left;
+        margin-left: 4%;
+    }
+    
+    .titleFoco{
+        font-size: 4vw; 
+        line-height: 4vw;
+        margin-top: 2%;
+        padding: 1%;
+        font-size: 3vw;
+    }
+    
+    .title3{
+        text-align: center;
+        line-height: 5vw;
+        margin-left: 0%;
+        font-size: 4vw;
+        margin-top: 1%;
+    }
+    
+    .parag4{
+        text-align: center;
+        width: 100%;
+        font-size: 3vw;
+        margin-left: 0;
+    }
+    
+    .subParag2{
+        position: relative;
+        margin-top: 2%;
+        font-size: 2vw;
+        text-align: center;
+        width: 100%;
+        margin-left:0;
+    }
+    
+    .title5{
+        right: 0%;
+        font-size: 4vw;
+        text-align: center;
+        line-height: 4vw;
+        width:100%;
+    }
+    
+    .parag5{
+        text-align:left;
+        width: 100%;
+        font-size: 3vw;
+        margin-left: 0%;
+    }
+    
+    .subParag3{
+        font-size: 2vw;
+        text-align: left;
+        width: 100%;
+        margin-left: 0%;
+
+    }
+    
+    .title6{
+        font-size: 4vw;
+        line-height: 4.5vw;
+        margin-top:5%;
+    }
+    
+    .parag6{
+        text-align: left;
+        position: relative;
+        font-size: 3vw;
+    }
+
+    .capture{
+        margin-top: 3%;
+    }
+    
+    .camera{
+        width: 100%;
+    }
+    
+    .selfie{
+        width: 80%;
+        position: relative;
+        left:10%
+    }
+    
+    .imgNav {
+        position: relative;
+        left: 3%;
+        width: 16% !important;
+    }
+
+} 
+
+
+@media screen and (min-width: 992px) and (max-width:1500px){
+    body, html{
+        overflow-x: hidden;
+    } 
+    
+    .img2{
+        width: 6vw;
+    }
+    
+    .img1{
+        width: 6vw;
+    }
+
+    .parag{
+        font-size: 1.5vw;
+    }
+    
+    .subParag1{
+        font-size: 1vw;
+    }
+     
+    .parag2{
+        font-size: 1.5vw;
+    }
+    
+    .parag3{
+        font-size: 1.5vw;
+        text-align: left;
+        margin-left: 4%;
+    }
+    
+    .parag4{
+        font-size: 1.5vw;
+    }
+    
+    .subParag2{
+        font-size: 1vw;
+    }
+    
+    .parag5{
+        font-size: 1.5vw;
+    }
+    
+    .subParag3{
+        font-size: 1vw;
+    }
+    
+    .parag6{
+        font-size: 1.5vw;
+    }
+    
+}    
+
+
+@media screen and (min-width:768px) and (max-width:991px){
+
+    body, html{
+        overflow-x: hidden;
+    } 
+
+    .container{
+        width: 100%;
+        height: auto;
+    }
+    .cores{
+        width: 123%;
+        position: relative;
+        right: 20%;
+        top: 4vw;
+    }
+    
+    .img2{
+        width: 7vw;
+    }
+    
+    .img1{
+        width: 7vw;
+    }
+
+    .parag{
+        font-size: 2vw;
+    }
+    
+    .subParag1{
+        font-size: 1.5vw;
+    }
+     
+    .parag2{
+        font-size: 2vw;
+    }
+    
+    .parag3{
+        font-size: 2vw;
+        text-align: left;
+        margin-left: 4%;
+    }
+    
+    .parag4{
+        font-size: 2vw;
+    }
+    
+    .subParag2{
+        font-size:1.5vw;
+        margin-left: 10%;
+    }
+     
+    .parag5{
+        font-size: 2vw;
+    }
+    
+    .subParag3{
+        font-size: 1.5vw;
+    }
+    
+    .parag6{
+        width: 120%;
+        font-size: 2vw;
+    }
+ 
+    .capture{
+        margin-top: 3%;
+    }
+
+    .camera{
+        width: 100%;
+    }
+
+    .selfie{
+        width: 80%;
+        position: relative;
+        left:10%
+    }
+    
+    .title5{
+        margin-top: -1%;
+    }
+
+    .google{
+        margin-top: 2%;
+    }
+
+    .imgNav {
+        position: relative;
+        left: 2%;
+        width: 10% !important;
+        margin: 0px;
+        padding: 0px;
+    
+    }
+    
+}

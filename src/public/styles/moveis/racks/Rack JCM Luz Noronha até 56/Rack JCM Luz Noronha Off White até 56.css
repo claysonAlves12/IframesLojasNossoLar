@@ -1,6 +1,6 @@
-body {
-    font-family: 'Noto Serif', serif;
-
+body,html{
+    overflow-x: hidden;
+    margin: 0;
 }
 
 .containerInicial,.containerTecnico,.containerFinal{
@@ -8,7 +8,6 @@ body {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-  /*   background-image: linear-gradient(to right, rgba(44, 167, 44, 0.788), rgba(60, 175, 60, 0.722)); */
 }
 
  .containerInicial{
@@ -196,32 +195,30 @@ body {
 }
 
 .containerTecnico{
-    margin-top: -10%;
+    margin-top: -15%;
     height: auto;
-    padding: 1%;   
+    padding: 5px;   
     border-radius: 20px;
-    background-image: url('/imgs/Rack JCM Luz Noronha até 56/backgroundText2.jpg');
+    background-image: url('/imgs/moveis/rack/Rack JCM Luz Noronha até 56/backgroundText2.jpg');
     background-size: cover; 
     background-position: left; 
+    max-width: 100%;
     
 }
 
 .mascote{
-    width: 7vw;
+    width: 30%;
     height: auto;
     position: relative;
-    left:140%;
-    top: 6vw;
+    left:45vw;
+    top: 6vh;
     z-index: 1000;
-}
-
-.custom-alignDois {
-    position: relative;
-    left: 30%;
 }
 
 .tittleP2 {
     font-family: 'Anton', sans-serif;
+    position: relative;
+    left: 65%;
     width: 100%;
     background: linear-gradient(to right, #000000, #225002); 
     background-clip: text; 
@@ -244,12 +241,10 @@ body {
 }
 
 .pText2 {
-    max-width: 100%;
     font-size: 0.9vw;
     position: relative;
-    right: 12%;
+    left: 58%;
     border-radius: 20px;
-    margin-top: 6%;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.541);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -292,10 +287,6 @@ body {
 
 
 @media screen and (min-width: 992px) and (max-width:1500px){
-    body, html{
-        overflow-x: hidden;
-    } 
-
     .pText {
         font-size: 1.55vw;
     }
@@ -318,6 +309,7 @@ body {
     
 }
 
+
 @media screen and (min-width:768px) and (max-width:991px){
     body, html{
         overflow-x: hidden;
@@ -337,11 +329,11 @@ body {
     }
     
     .TextCores {
-        font-size: 3.5vw; 
+        font-size: 3vw; 
     }
 
     .NoronhaOffWhite {
-        font-size: 3.5vw; 
+        font-size: 3vw; 
     }
     
     .Noronha-Off-White {
@@ -349,7 +341,7 @@ body {
     }
     
     .NoronhaGrafite {
-        font-size: 3.5vw; 
+        font-size: 3vw; 
     }
     
     .Noronha-Grafite {
@@ -372,37 +364,53 @@ body {
         font-size: 3.5vw;  
     }
     
-    .tittleP2 {
-        font-size: 3.5w; 
+    .mascote{
+        left:45vw;
+        top: 6vw;
     }
     
+    .tittleP2 {
+        font-size: 3vw; 
+    }
+
     .pText2 {
-        max-width: 150%;
+        width: 120%;
+        left: 50%;
         font-size: 1.5vw;
-        position: relative;
     }
     
     .Pdf {
-        font-size: 1.4vw; 
-    }
-
-    .highlight-text {
+        left: 15vw;
+        top: 1vh;
+        padding: 5px;
         font-size: 1.5vw; 
     }
+    
+    .highlight-text {
+        max-width: 100%;
+        font-size: 1.5vw; 
+        margin-left: 0%;
+    }
+    
 }    
 
 
 @media screen and (min-width: 0px) and (max-width:767px){
-    body, html{
+    body,html{
         overflow-x: hidden;
-    } 
+    }
+
+    .img-fluid.logo {
+        width: 30%;
+    }
+    
 
     .container{
         width: 100%;
     }
 
     .Titulo {
-        margin-top: -8%;
+
         font-size: 5vw ; 
     }
     
@@ -479,41 +487,53 @@ body {
         position: relative;
         left: -7%;
     }
-
-    .mascote{
-        width: 9vw;
-        height: auto;
-        position: relative;
-        left:85%;
-        top: 10vw;
-        z-index: 1000;
+    .containerTecnico{
+        margin-top: -20%;
+        
     }
     
-    .custom-alignDois {
-        position: relative;
-        left: 10%;
+    .mascote{
+        width: 16%;
+        left:60vw;
+        top: 7vw;
     }
     
     .tittleP2 {
-        font-size: 5vw;
-        margin-left: 10%; 
+        font-size: 5vw; 
+        left: 18%;
     }
-    
+
     .pText2 {
+        width: 80%;
+        left: 10%;
         font-size: 2.5vw;
-        margin-top: 2%;
     }
     
     .Pdf {
-        left: 60%;
-        font-size: 2.5vw; 
+        left: 25vw;
+        top: 1vh;
+        padding: 10px;
+        font-size: 2vw; 
     }
     
     .highlight-text {
-        font-size: 2.2vw; 
-        text-align: left;
+        max-width: 100%;
+        font-size: 2vw; 
+        margin-left: 0%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

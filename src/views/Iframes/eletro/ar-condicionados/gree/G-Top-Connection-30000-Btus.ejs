@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/imgs/LojasNossoLar.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/eletro/ar-condicionados/tabelaDeBtus.css">
     <title>G-Top Connection 30000 Btus</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -46,13 +47,96 @@
 </head>
 <body>
  
+    <div class="container">
+
+        <div class="text-center">
+            <div class="text-left containerBtus">
+                <p>Está com dúvidas sobre qual ar condicionado escolher?<br>Encontre o modelo perfeito para manter seu espaço fresco e confortável durante o calor!</p>
+            </div>
+            <button id="mostrarLista" class="botao">Descubra agora!</button>
+        </div>
+        
+        <div class="overlay" id="overlay">
+            <div id="lista">
+                <button id="fecharLista" class="btn btn-danger">x</button>
+                <p class="paragrafoDaDica"><strong>Sabe o que significa BTU?</strong> É a medida da capacidade de refrigeração do ar condicionado. Confira a tabela abaixo para fazer a escolha certa na hora da compra.</p>
+                <ul>
+                    <li>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Tamanho do ambiente</th>
+                                    <th >Sol da manhã</th>
+                                    <th >Sol da tarde ou dia todo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>9 m²</td>
+                                    <td>7.000 BTU/h</td>
+                                    <td class="tdFinal">7.500 BTU/h</td>
+                                </tr>
+                                <tr>
+                                    <td>12 m²</td>
+                                    <td>7.500 BTU/h</td>
+                                    <td class="tdFinal">9.000 BTU/h</td>
+                                </tr>
+                                <tr>
+                                    <td>15 m²</td>
+                                    <td>9.000 BTU/h</td>
+                                    <td class="tdFinal">12.000 BTU/h</td>
+                                </tr>
+                                <tr>
+                                    <td>20 m²</td>
+                                    <td>12.000 BTU/h</td>
+                                    <td class="tdFinal">18.000 BTU/h</td>
+                                </tr>
+                                <tr>
+                                    <td>25 m²</td>
+                                    <td>18.000 BTU/h</td>
+                                    <td class="tdFinal">22.000 BTU/h</td>
+                                </tr>
+                                <tr>
+                                    <td>30 m²</td>
+                                    <td>23.000 BTU/h</td>
+                                    <td class="tdFinal">24.000 BTU/h</td>
+                                </tr>
+                                <tr>
+                                    <td>40 m²</td>
+                                    <td>24.000 BTU/h</td>
+                                    <td class="tdFinal">30.000 BTU/h</td>
+                                </tr>
+                                <tr>
+                                    <td>50 m²</td>
+                                    <td>31.000 BTU/h</td>
+                                    <td class="tdFinal">36.000 BTU/h</td>
+                                </tr>
+                                <tr>
+                                    <td>60 m²</td>
+                                    <td>36.000 BTU/h</td>
+                                    <td class="tdFinal">48.000 BTU/h</td>
+                                </tr>
+                                <tr>
+                                    <td>70 m²</td>
+                                    <td>42.000 BTU/h</td>
+                                    <td class="tdFinal">58.000 BTU/h</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <div class="container text-center container">
+        
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <img src="/imgs/eletro/ar-condicionados/Green/G-Top Connection/gtopConnection30000.jpg" alt="Gree G Top plus" class="imagem-centralizada">
             </div>
         </div>
+
         <div class="buttonDownload container">
             <div class="download-button">
                 <a class="Pdf" href="https://github.com/claysonAlves12/IframesLojasNossoLar/raw/main/src/public/pdfs/eletro/arCondicionados/G-top-connection-inverter/Manual-G-TOP-INVERTER.pdf" download="Manual G-TOP INVERTER.pdf">Baixe o Manual</a>
@@ -60,9 +144,6 @@
         </div>
     </div>
         
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/eletro/ar-condicionados/tabeladeBtus.js"></script> 
 </body>
 </html>

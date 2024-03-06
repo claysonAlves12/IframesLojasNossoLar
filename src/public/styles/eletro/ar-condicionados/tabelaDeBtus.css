@@ -112,6 +112,10 @@ tbody tr:nth-child(odd) {
         margin: 0;
         margin-left:5px;
     }
+    #lista{
+       width: 500px;
+       height: 550px;
+    }
 }
 
 @media screen and (min-width: 0px) and (max-width:575px){

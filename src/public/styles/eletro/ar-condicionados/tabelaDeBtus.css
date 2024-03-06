@@ -126,8 +126,11 @@ tbody tr:nth-child(odd) {
 
     #lista{
         width: 90%;
-        height: 550px;
-     }
+        height: 450px;
+    }
+
+    #fecharLista {
+        left: 85%;
+    }
  
 }
-

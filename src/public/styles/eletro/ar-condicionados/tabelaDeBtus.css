@@ -122,6 +122,12 @@ tbody tr:nth-child(odd) {
     .containerBtus {
         width: 100%;
         margin:0 0px 20px 0px;
-    
     }
+
+    #lista{
+        width: 90%;
+        height: 550px;
+     }
+ 
 }
+
